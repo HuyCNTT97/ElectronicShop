@@ -1,0 +1,191 @@
+﻿@model _Models.EF.Product
+@{
+    ViewBag.Title = "chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var category = ViewBag.Category as _Models.EF.ProductCategory;
+    var productsRelated = (List<_Models.EF.Product>)ViewBag.ProductsRelated ;
+    var duongdanhinh = Model.hinhanh == null ? "/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png" : Model.hinhanh;
+    var mang = duongdanhinh.Split('|');
+}
+@section csschirld{
+    <script src="~/Asset/Client/js/easyResponsiveTabs.js"></script>
+    <link href="~/Asset/Client/css/easy-responsive-tabs.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Asset/Client/css/global.css" rel="stylesheet" />
+    <script src="~/Asset/Client/js/slides.min.jquery.js"></script>
+    <script>
+        $(function () {
+            $('#products').slides({
+                preload: true,
+                preloadImage: 'img/loading.gif',
+                effect: 'slide, fade',
+                crossfade: true,
+                slideSpeed: 350,
+                fadeSpeed: 500,
+                generateNextPrev: true,
+                generatePagination: false
+            });
+        });
+    </script>
+}
+<div class="content">
+    <div class="content_top">
+        <div class="back-links">
+            <p style="font-weight:bold;font-size:15px;"><a href="/" style="color:cornflowerblue">Trang Chu</a>>>
+            <a style="color:cornflowerblue" href="san-pham/@category.MetaTitle+@category.CategoryID">@category.CategoryName</a></p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="section group">
+        <div class="cont-desc span_1_of_2">
+            <div class="product-details">
+                <div class="grid images_3_of_2">
+                    <div id="container">
+                        <div id="products_example">
+                            <div id="products">
+                                <div class="slides_container">
+                                    <a href="#" target="_blank"><img src="@Model.Image" alt=" " /></a>
+                                    <a href="#" target="_blank"><img src="@mang[0]" alt=" " /></a>
+                                    <a href="#" target="_blank"><img src="@mang[1]" alt=" " /></a>
+                                    <a href="#" target="_blank"><img src="@mang[2]" alt=" " /></a>
+                                    <a href="#" target="_blank"><img src="@mang[3]" alt=" " /></a>
+                                </div>
+                                <ul class="pagination">
+                                    <li><a href="#" target="_blank"><img src="@Model.Image" alt=" " /></a></li>
+                                    <li><a href="#" target="_blank"><img src="@mang[0]" alt=" " /></a></li>
+                                    <li><a href="#" target="_blank"><img src="@mang[1]" alt=" " /></a></li>
+                                    <li><a href="#" target="_blank"><img src="@mang[2]" alt=" " /></a></li>
+                                    <li><a href="#" target="_blank"><img src="@mang[3]" alt=" " /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc span_3_of_2">
+                    <h2>@Model.ProductName </h2>
+                    <p>@Model.Description</p>
+                    <div class="price">
+                        <p>Giá: 
+                        @if (Model.PromotionPrice != null && Model.PromotionPrice != 0)
+                        {
+                            var giakm = Model.Price - Model.Price * Model.PromotionPrice / 100;
+                            <span>@string.Format("{0:#,###,### VND}", giakm)</span>
+                        }
+                        else
+                        {
+                            <span>@string.Format("{0:#,###,### VND}", Model.Price)</span>
+                        }
+                        </p>
+                    </div>
+                    <div class="share-desc">
+                        <div class="share">
+                            <p>Chia Sẻ :</p>
+                            <ul>
+                                <li><a href="#"><img src="~/Asset/Client/images/facebook.png" alt="" /></a></li>
+                                <li><a href="#"><img src="~/Asset/Client/images/twitter.png" alt="" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="button"><span><a href="/them-gio-hang?productID=@Model.ProductID&quantity=1">Thêm Vào Giỏ Hàng</a></span></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="wish-list">
+                        <ul>
+                            <li class="wish"><a href="#">Thêm vào yêu thích</a></li>
+                            <li class="compare"><a href="#">So Sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="product_desc">
+                <div id="horizontalTab">
+                    <ul class="resp-tabs-list">
+                        <li>Chi Tiết Sản Phẩm</li>
+                     
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="resp-tabs-container">
+                        <div class="product-desc">
+                            @Html.Raw(Model.Detail)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#horizontalTab').easyResponsiveTabs({
+                                type: 'default', //Types: default, vertical, accordion
+                        width: 'auto', //auto or any width like 600px
+                        fit: true   // 100% fit in a container
+                    });
+                        });
+            </script>
+            <div class="content_bottom">
+                <div class="heading">
+                    <h3>Sản Phẩm Liên Quan</h3>
+                </div>
+                <div class="see">
+                    <p><a href="/san-pham/">Xem Tất Cả</a></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="section group">
+                @foreach (var item in productsRelated)
+                {
+                    var url = "chi-tiet/" + item.MetaTitle + "-" + item.ProductID;
+                    <div class="grid_1_of_4 images_1_of_4">
+                        <a href="@url"><img src="@item.Image" width="170" height="170" alt="@item.ProductName"></a>
+                        <div class="price" style="border:none">
+                            <div class="add-cart" style="float:none">
+                                <h4><a href="/them-gio-hang?productID=@item.ProductID&quantity=1">Thêm Vào Giỏ</a></h4>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+        <div class="rightsidebar span_3_of_1">
+            <h2>Danh Mục Sản Phẩm</h2>
+            @{
+                Html.RenderAction("ListProductCategory", "ProductCategory");
+            }
+            
+            <div class="community-poll">
+                <h2>Câu Hỏi</h2>
+                <p>Lí do tại sao bạn lại mua hàng Online?</p>
+                <div class="poll">
+                    <form>
+                        <ul>
+                            <li>
+                                <input type="radio" name="vote" class="radio" value="1">
+                                <span class="label"><label>Thuận tiện cho việc đặt hàng</label></span>
+                            </li>
+                            <li>
+                                <input type="radio" name="vote" class="radio" value="2">
+                                <span class="label"><label for="vote_2">Giá rẻ hơn</label></span>
+                            </li>
+                            <li>
+                                <input type="radio" name="vote" class="radio" value="3">
+                                <span class="label"><label for="vote_3">Có nhiều sự lựa chọn hơn</label></span>
+                            </li>
+                            <li>
+                                <input type="radio" name="vote" class="radio" value="5">
+                                <span class="label"><label for="vote_5">Bảo mật thanh toán</label></span>
+                            </li>
+                            <li>
+                                <input type="radio" name="vote" class="radio" value="6">
+                                <span class="label"><label for="vote_6">30 ngày hoàn trả hàng hóa và tiền </label></span>
+                            </li>
+                            <li>
+                                <input type="radio" name="vote" class="radio" value="7">
+                                <span class="label"><label for="vote_7">Khác</label></span>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

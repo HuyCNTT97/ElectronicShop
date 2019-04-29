@@ -1,0 +1,305 @@
+﻿@model _Models.EF.CustomerAccount
+@{
+    /**/
+
+    ViewBag.Title = "Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    #header-content {
+        text-align: center;
+    }
+
+    #noidung {
+        border: 1px solid #66a3cf;
+        min-height: 300px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .cot1 {
+        text-align: left;
+        width: 35%;
+    }
+
+    .cot2 {
+        width: 35%;
+    }
+
+    .cot3 {
+        text-align: right;
+        width: 30%;
+    }
+
+    table tr td {
+        padding: 20px;
+    }
+
+    .otext {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 2px 2px 2px 2px #ccc9c9;
+    }
+
+    .button {
+        background: #4fa929;
+    }
+
+        .button:hover {
+            background: #4fa929;
+        }
+
+    .success {
+        color: lawngreen;
+    }
+
+    .fail {
+        color: red;
+    }
+</style>
+@section slide{
+    @using (Html.BeginForm("Information", "Home", Model, FormMethod.Post))
+    {
+        if (TempData["msg"] != null)
+        {
+            @Html.Raw(TempData["msg"]);
+        }
+        <div class="header_slide">
+            <div class="header_bottom_left">
+                <div class="categories">
+                    @{Html.RenderAction("OptionAccount", "Home");}
+
+                </div>
+            </div>
+            <div class="header_bottom_right">
+                <div class="content">
+                    <div class="section group">
+                        <div id="header-content"><h2>Thông Tin Chung</h2></div>
+                        <div id="noidung">
+                            <table>
+                                <tr class="dong">
+                                    <td class="cot1">
+                                        <label>Tên Tài Khoản</label>
+                                    </td>
+                                    <td class="cot2">
+                                        @{
+                                            var accountName = Model.Email;
+                                            accountName = accountName.Remove(3, accountName.Length - 3);
+                                            accountName = accountName.Insert(3,
+                                             new String('*', 8));
+                                        }
+                                        @accountName
+                                    </td>
+                                    <td class="cot3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="cot1">
+                                        <label>Mật Khẩu Cũ</label>
+                                    </td>
+                                    <td class="cot2">
+                                        @Html.TextBoxFor(model => model.PassWord, new { @type = "password", @required = "true", @class = "otext", @maxlength = "13" })
+                                    </td>
+                                    <td class="cot3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="cot1">
+                                        <label>Mật Khẩu Mới</label>
+                                    </td>
+                                    <td class="cot2">
+                                        <input type="password" required="true" maxlength="13" name="newPassword" class="otext" id="password1" />
+                                    </td>
+                                    <td class="cot3">
+                                        <span id="checkstrongpass"></span>
+                                    </td>
+                                </tr>
+                                <tr class="dong">
+                                    <td class="cot1">
+                                        <label>Xác Nhận Mật Khẩu</label>
+                                    </td>
+                                    <td class="cot2">
+                                        @Html.TextBoxFor(model => model.ConfirmPassWord, new
+                                   { @class = "otext", @Value = "", @id = "password2", @type = "password", @required = "true", @maxlength = "13" })
+                                    <td class="cot3" style="text-align:left">
+                                        <span id="checkstatus"></span>
+                                    </td>
+                                </tr>
+                                <tr class="dong">
+                                    <td class="cot1">
+                                        <label>Họ Tên</label>
+                                    </td>
+                                    <td class="cot2">
+                                        @Model.Name
+                                    </td>
+                                    <td class="cot3"></td>
+                                </tr>
+                                <tr class="dong">
+                                    <td class="cot1">
+                                        <label>Giới Tính</label>
+                                    </td>
+                                    <td class="cot2">
+                                        @Model.GioiTinh
+                                    </td>
+                                    <td class="cot3"></td>
+                                </tr>
+                                <tr class="dong">
+                                    <td class="cot1">
+                                        <label>Số Điện Thoại</label>
+                                    </td>
+                                    <td class="cot2">
+                                        <input type="text" class="otext" value="@Model.TelephoneNumber" />
+                                    </td>
+                                    <td class="cot3"></td>
+                                </tr>
+                                <tr class="dong">
+                                    <td class="cot1">
+                                        <label>Ngày Sinh</label>
+                                    </td>
+                                    <td class="cot2">
+                                        @Model.BirthDay.ToString();
+                                    </td>
+                                    <td class="cot3"></td>
+                                </tr>
+                                <tr class="dong">
+                                    <td class="cot1"></td>
+                                    <td class="cot2"></td>
+                                    <td class="cot3">
+                                        <input type="submit" id="btnChange" class="button"
+                                               value="Cập Nhập Thông Tin" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+                                            }
+    <script>
+        $(document).ready(function () {
+           $('#password2').keyup(checkpass);
+            $('#password1').keyup(checkpass);
+            $('#btnChange').click(confirm);
+        });
+
+        function confirm() {
+            
+            var password1 = $('#password1').val();
+            var password2 = $('#password2').val();
+            if (password1 === password2) {
+                return true;
+            }
+            else {
+                alert("Bạn chưa xác nhận mật khẩu đúng");
+                return false;
+            }
+            var kitu = scorePassword(password1);
+            if (kitu < 30) {
+                alert("Mật khẩu mới phải dài hơn 6 kí tự");
+                return false;
+            }
+            if (kitu >= 30&&kitu<=60) {
+                alert("Mật khẩu mới phải mạnh hoặc tốt")
+                return false;
+
+            }
+            if (kitu > 60) {
+                return true;
+            }
+            if (kitu > 80) {
+                return true;
+            }
+
+
+
+            
+          
+
+        }
+        function checkpass() {
+            var password1 = $('#password1').val();
+            var password2 = $('#password2').val();
+            var kitu = scorePassword(password1);
+            if (kitu < 30) {
+                $('#checkstrongpass').removeClass("success");
+                $('#checkstrongpass').text("Mật khẩu quá ngắn");
+                $('#checkstrongpass').addClass("fail");
+               
+            }
+            if (kitu >= 30&&kitu<=60) {
+                $('#checkstrongpass').removeClass("success");
+                $('#checkstrongpass').text("Yếu. Mật khẩu phải chứa chữ in hoa và số");
+                $('#checkstrongpass').addClass("fail");
+              
+            }
+            if (kitu > 60) {
+                $('#checkstrongpass').removeClass("fail");
+                $('#checkstrongpass').text("Mật khẩu tốt");
+                $('#checkstrongpass').addClass("success");
+            }
+            if (kitu > 80) {
+                $('#checkstrongpass').removeClass("fail");
+                $('#checkstrongpass').text("Mật khẩu mạnh");
+                $('#checkstrongpass').addClass("success");
+            }
+
+
+            
+            if (password1 === password2) {
+                $('#checkstatus').removeClass("fail");
+                $('#checkstatus').text("Mật Mã Xác Nhận Đúng");
+
+                $('#checkstatus').addClass("success");
+            }
+            else {
+                $('#checkstatus').text("Mật Mã Xác Nhận Sai")
+                $('#checkstatus').removeAttr();
+
+                $('#checkstatus').addClass("fail");
+              
+            }
+            if (password1 == "" || password2 == "") {
+                $('#checkstatus').removeClass("fail");
+                $('#checkstatus').removeClass("success");
+                $('#checkstatus').text("");
+                
+            }
+           
+        }
+        function scorePassword(pass) {
+            var score = 0;
+            if (!pass)
+                return score;
+
+            // award every unique letter until 5 repetitions
+            var letters = new Object();
+            for (var i = 0; i < pass.length; i++) {
+                letters[pass[i]] = (letters[pass[i]] || 0) + 1;
+                score += 5.0 / letters[pass[i]];
+            }
+
+            // bonus points for mixing it up
+            var variations = {
+                digits: /\d/.test(pass),
+                lower: /[a-z]/.test(pass),
+                upper: /[A-Z]/.test(pass),
+                nonWords: /\W/.test(pass),
+            }
+
+            variationCount = 0;
+            for (var check in variations) {
+                variationCount += (variations[check] == true) ? 1 : 0;
+            }
+            score += (variationCount - 1) * 10;
+
+            return parseInt(score);
+        }
+    </script>
+}

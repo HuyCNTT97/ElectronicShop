@@ -1,0 +1,101 @@
+﻿@using _Models.EF;
+@model PagedList.IPagedList<_Models.EF.Contact>
+@using PagedList.Mvc;
+@{
+    /**/
+    ViewBag.Title = "Quản trị người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+@section jsFooter{
+<script src="~/Asset/js/Controller/ContactController.js"></script>
+}
+@{
+    int pagenext = 1;
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+        Data Table Contact
+        </div>
+        <div class="card-body">
+           
+            
+                @using (Html.BeginForm("Index", "Contact", FormMethod.Get))
+                {
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <a class="btn" href="/Admin/Contact/Create">Create</a>
+                        </div>
+                   
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchAbout" value="@ViewBag.SearchContact" placeholder="Tìm kiếm Contact" class="form-control" />
+
+                        <button type="submit" id="btnSeach" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+                <table class="table table-bordered table-striped table-hover" id="tableContact">
+                    <thead class="text-center">
+                        <tr>
+                            <th>Option</th>
+                            <th>Content</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.PageNumber != 1)
+                        {
+                            pagenext = Model.PageNumber - 1;
+                        }
+                        else
+                        {
+                            if (Model.PageCount <= 2)
+                            {
+                                pagenext = 1;
+                            }
+                            else
+                            {
+                                pagenext = 1;
+                            }
+                        }
+                        @foreach (var item in Model)
+                        {
+                            <tr id="row_@item.ContactID">
+                                <td>
+                                    <p>
+                                        @Ajax.ActionLink("Remove", "Remove", new { @ContactID = item.ContactID },
+     new AjaxOptions() {
+         Confirm="Bạn có chắc là muốn xóa không?",
+         OnComplete = "$('#row_" + item.ContactID + "').remove()",
+         HttpMethod="Delete",
+         OnSuccess="alert(\"Đã xóa Contact có mã="+item.ContactID+"\");" +
+                 "var rowTable=$('#tableContact tr').length;if(rowTable==2)location.reload();"
+     })
+                                    ||
+                                    <a href="/Admin/Contact/Edit/@item.ContactID">Edit</a>
+                                </p>
+                            </td>
+                            <td>@Html.Raw(item.Content)</td>
+                            <td><a href="#" class="btn-link" data-id="@item.ContactID">@(item.Status ? "Kích Hoạt" : "Đã Khóa")</a></td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+            </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+    </div>
+    if (TempData["msg"] != null)
+    {
+        @Html.Raw(TempData["msg"]);
+    }
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        })
+    </script>
+}

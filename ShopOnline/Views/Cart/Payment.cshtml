@@ -1,0 +1,134 @@
+﻿@model List<ShopOnline.Models.CartItem>
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "trang thanh toán";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    double tong = 0;
+}
+<link href="~/Asset/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="~/Asset/Client/css/CSSTable.css" rel="stylesheet" />
+@section jsFooter{
+    <script src="~/Asset/Client/js/CartController.js"></script>
+
+}
+
+@if (Model.Count > 0)
+{
+   
+    <table class="table table-responsive table-striped">
+        <thead class="font-weight-bold text-white" style="background:#808080;">
+            <tr>
+                <td>Mã SP</td>
+                <td>Tên SP</td>
+                <td>Ảnh sp</td>
+                <td>Số lượng</td>
+                <td>Đơn giá</td>
+                <td>Thành tiền</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product.ProductID</td>
+                    <td>@item.Product.ProductName</td>
+                    <td><img src="@item.Product.Image" alt="@item.Product.ProductName" width="150" height="150"></td>
+                    <td><input type="number" class="txtQuantity" data-id="@item.Product.ProductID" value="@item.Quantity"></td>
+                    @if (item.Product.PromotionPrice != null && item.Product.PromotionPrice != 0)
+                    {
+                        tong = tong + (item.Product.Price - item.Product.Price * double.Parse((item.Product.PromotionPrice / 100).ToString())) * item.Quantity;
+                        <td>@string.Format("{0:#,###,### VND}", item.Product.Price - item.Product.Price * item.Product.PromotionPrice / 100)</td>
+                        <td>@string.Format("{0:#,###,### VND}", (item.Product.Price - item.Product.Price * item.Product.PromotionPrice / 100) * item.Quantity)</td>
+
+                    }
+                    else
+                    {
+                        tong = tong + item.Product.Price * item.Quantity;
+                        <td>@string.Format("{0:#,###,### VND}", item.Product.Price)</td>
+                        <td>@string.Format("{0:#,###,### VND}", item.Product.Price * item.Quantity)</td>
+                    }
+                    <td><a href="#" data-id="@item.Product.ProductID" class="btn-delete">Hủy</a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <div style="background:#808080;color:black;font-weight:bold" class="col-md-3">
+        @Html.Label("", "Tổng Tiền", htmlAttributes: new { }):
+        @Html.Label("lblTong", string.Format("{0:#,###,### VND}", tong), htmlAttributes: new { })
+    </div>
+
+}
+else
+{
+    <h3 class="alert alert-warning">Chưa có hàng nào được thêm</h3>
+}
+
+<div class="section group">
+    <div class="col-md-6">
+        @using (Html.BeginForm("Payment", "Cart",new {@lblTong=tong }, FormMethod.Post))
+        {
+            if (TempData["msg"] != null)
+            {
+                @Html.Raw(TempData["msg"]);
+            }
+            <div class="form-group">
+                <label>Người Nhận</label>
+                <input type="text" name="txtShipName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Điện Thoại</label>
+                <input type="number" name="txtPhone" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Địa Chỉ</label>
+                <input type="text" name="txtAdress" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email"
+                       required id="email"
+                       name="txtEmail" class="form-control"
+                       placeholder="YourNameEmail@TypeEmail.com" />
+                <div id="longerrormsg"></div>
+            </div>
+            <button type="submit" class="btn btn-dark">Xác Nhận</button>
+        }
+    </div>
+</div>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script>
+    $("#email").on("input", function (evt) {
+        if (evt.target.value.length > 50) {
+            evt.target.setCustomValidity("Email too long!!!");
+            $("#shorterrormsg").show();
+            $("#longerrormsg").html("Email too long!!!");
+        }
+        else {
+            evt.target.setCustomValidity("");
+            $("#shorterrormsg").hide();
+            $("#longerrormsg").html("");
+        }
+    });
+</script>
+<script>
+    $("#email").on("invalid", function (evt) {
+        var reason = evt.target.validity;
+        if (!reason.customError) {
+            if (reason.typeMismatch) {
+                evt.target.setCustomValidity("Invalid email address!!!");
+                $("#longerrormsg").html("Invalid email address!!!");
+            }
+            if (reason.valueMissing) {
+                evt.target.setCustomValidity("Email must be entered!!!");
+                $("#longerrormsg").html("Email must be entered!!!");
+            }
+        }
+        $("#shorterrormsg").show();
+    });
+</script>

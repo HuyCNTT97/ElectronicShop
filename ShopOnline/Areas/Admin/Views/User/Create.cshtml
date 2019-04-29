@@ -1,0 +1,68 @@
+﻿@model _Models.EF.UserAccount
+
+@{
+                /**/
+
+                ViewBag.Title = "Create";
+                Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("Create","User",FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="card">
+        <div class="card-header">Thêm mới người dùng</div>
+        <div class="card-body">
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="row">
+                    @Html.Label("Tên Tài Khoản", htmlAttributes: new { @class = "col-md-2 text-center" })
+                    @Html.TextBoxFor(model => model.UserAccount1, new { @class = "form-control col-md-2" })
+                    @Html.Label("Mật Khẩu", new { @class = "col-md-2 text-center" })
+                    @Html.PasswordFor(model => model.PassWord, new { @class = "col-md-2 form-control" })
+                    @Html.ValidationMessageFor(model => model.PassWord, "", new { @class = "text-danger" })
+                    @Html.Label("Tên Người Dùng", htmlAttributes: new { @class = "col-md-2 text-center" })
+                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control col-md-2" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    @Html.Label("Địa Chỉ", htmlAttributes: new { @class = "col-md-2 text-center" })
+                    @Html.TextBoxFor(model => model.Address, new { @class = "form-control col-md-2" })
+                    @Html.Label("Email", new { @class = "col-md-2 text-center" })
+                    @Html.PasswordFor(model => model.Email, new { @class = "col-md-2 form-control" })
+                    @Html.Label("Số Điện Thoại", htmlAttributes: new { @class = "col-md-2 text-center" })
+                    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control col-md-2" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    @Html.Label("Chọn Loại Quyền", htmlAttributes: new { @class = "col-md-2 text-center" })
+                    @Html.DropDownListFor(model=>model.PermissionID, ViewBag.ListPermission as SelectList,new
+               {
+                   @class="form-control col-md-2"
+               })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    @Html.Label("Trạng Thái Khóa", htmlAttributes: new { @class = "col-md-2 text-center" })
+                    @Html.DropDownList("tempstatus", new SelectList(new string[] { "Kích Hoạt", "Khóa" }),
+                   new {
+                       @class="col-md-2 form-control"
+                   })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    </div>
+}

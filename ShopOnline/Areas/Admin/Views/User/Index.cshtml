@@ -1,0 +1,128 @@
+﻿@using _Models.EF;
+@model PagedList.IPagedList<_Models.EF.UserAccount>
+@using PagedList.Mvc;
+@{
+        /**/
+        ViewBag.Title = "Quản trị người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+@section jsFooter{
+
+    <script src="~/Asset/js/Controller/UserController.js"></script>
+}
+@{
+    int nextpage = 1;
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Data Table Example
+        </div>
+        <div class="card-body table-responsive">
+            <a href="/Admin/User/Create" class="btn">Create</a>
+            @using (Html.BeginForm("Index", "User", FormMethod.Get))
+            {
+                <div class="row">
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchUser" value="@ViewBag.Search" placeholder="Tìm kiếm user" class="form-control" />
+
+                        <button type="submit" id="btnSeachUser" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover bg-light table-striped" id="tableUser" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Chức Năng</th>
+                            <th>Tên Tài Khoản</th>
+                            <th>Mật Khẩu</th>
+                            <th>Tên User</th>
+                            <th>Địa Chỉ</th>
+                            <th>Email</th>
+                            <th>Số Điện Thoại</th>
+                            <th>Phân Quyền</th>
+
+                            <th>Trạng Thái</th>
+                        </tr>
+                    </thead>
+                    <tboy>
+                        @{
+                            if (Model.IsFirstPage)
+                            {
+                                if (Model.PageCount >= 2)
+                                {
+                                    nextpage = Model.PageNumber + 1;
+                                }
+                                else
+                                {
+                                    nextpage = 1;
+                                }
+                            }
+                            else
+                            {
+                                if (Model.PageCount <= 2)
+                                {
+                                    nextpage = 1;
+                                }
+                                else
+                                {
+                                    nextpage = Model.PageNumber - 1;
+                                }
+                            }
+                        }
+                        @foreach (var item in Model)
+                        {
+                            <tr id="row_@item.UserID">
+                                <td>
+
+                                    @Ajax.ActionLink("Remove", "Remove", new { IDnguoiDungCanXoa = item.UserID }, new AjaxOptions()
+                               {
+                                   Confirm = "bạn có muốn xóa bản ghi này?",
+                                   OnComplete = "$('#row_" + @item.UserID + "').remove();",
+                                   HttpMethod = "Delete",
+                                   OnSuccess="$(document).ready(function(){" +
+                                   "alert(\"Bạn đã xóa account có UserAccount="+item.UserAccount1+"\");" +
+                                   "var rowCount=$('#tableUser tr').length;if(rowCount==1)" +
+                                   "location.replace(location.pathname+\"?page="+nextpage+"\");" +
+                                   "});"
+                               })||
+
+                                    <a href="/Admin/User/Edit/@item.UserID">Edit </a>
+                                </td>
+                                <td>@item.UserAccount1</td>
+                                <td>@item.PassWord</td>
+                                <td>@item.Name</td>
+                                <td>@item.Address</td>
+                                <td>@item.Email</td>
+                                <td>@item.Phone</td>
+                                @{
+                                    _Models.DAO.PermissionDAO permissionDAO = new _Models.DAO.PermissionDAO();
+                                    var permissionName = permissionDAO.GetPermission(item.PermissionID).PermissionName;
+                                }
+                                <td>@permissionName</td>
+                                <td><a class="btn-link-active" data-id=@item.UserID href="#">@(item.Status ? "Kích Hoạt" : "Đã Khóa")</a></td>
+                            </tr>
+                        }
+
+                    </tboy>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, SearchUser = ViewBag.Search }))
+            </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        @if (TempData["msg"] != null)
+        {
+        @Html.Raw(TempData["msg"]);
+        }
+       
+    </div>
+                                   
+    <script type="text/javascript">
+    
+    </script>
+}

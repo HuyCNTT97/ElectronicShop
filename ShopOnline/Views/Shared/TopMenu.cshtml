@@ -1,0 +1,217 @@
+﻿@model List<_Models.EF.Menu>
+<link href="~/Asset/Client/css/modal.css" rel="stylesheet" />
+@{
+    var session = (ShopOnline.Common.CustomerLogin)Session[ShopOnline.Common.CommonConstants.Customer_SESSION];
+}
+<link href="~/css/all.css" rel="stylesheet" />
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin-left:-20px;
+            
+            z-index: 1;
+        }
+            .dropdown-content1 .dropdown-item {
+                background: black;
+                display: block;
+                min-width: 100px;
+                color: #f9f9f9;
+                margin-bottom: 3px;
+            }
+            .dropdown1:hover .dropdown-content1 {
+                display: block;
+            }
+        .modaltu1 {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            padding-left: 350px;
+            right: 0;
+            left: 0;
+            top: 0;
+            width: 50%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+        }
+
+        span.close:hover {
+            color: white;
+            font-weight: bold;
+        }
+
+        .modal-content1 {
+            position: relative;
+            background-color: black;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+            color: white;
+        }
+
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        .modal-header1 {
+            padding: 2px 16px;
+            background-color: black;
+            color: white;
+            font-size: 36px;
+            border-bottom: 3px solid white;
+        }
+
+        .modal-body1 {
+            padding: 2px 16px;
+            border-bottom: 3px solid white;
+            font-size: 24px;
+        }
+
+        .modal-footer1 {
+            padding: 2px 16px;
+            background-color: black;
+            color: white;
+            border-bottom: 3px solid white;
+        }
+        .nut{
+            
+            border-radius:10px 10px 10px 10px;
+            background:black;
+            padding:5px;
+            
+        }
+    </style>
+
+    @if (Session[ShopOnline.Common.CommonConstants.Customer_SESSION] == null)
+    {
+        <ul>
+            @foreach (var item in Model)
+            {
+                if (item.Link == "/dang-nhap")
+                {
+                    <li class="hover1">
+                        <button id="myBtn" style="border:none;background:black;color:white;margin-right:5px;font-size:18px;margin-bottom:2px;">Đăng Nhập</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modaltu1" sty>
+
+                            <!-- Modal content -->
+                            @using (Html.BeginForm("LoginCustomer", "User", FormMethod.Post))
+                            {
+                                <div class="modal-content1">
+                                    <div class="modal-header1">
+                                        <span class="close" style="font-size:50px">&times;</span>
+                                        <h2 style="margin-bottom:20px">Đăng Nhập</h2>
+                                    </div>
+                                    <div class="modal-body1">
+                                        <p>Email</p>
+                                        <p><input type="email" required name="txtEmail" style="margin-bottom:20px;font-size:18px;padding:5px;border-radius:3px;width:60%" /></p>
+                                    </div>
+                                    <div class="modal-body1">
+                                        <p>Mật Khẩu</p>
+                                        <p><input type="password" required name="txtPassWord" style="margin-bottom:20px;font-size:18px;padding:5px;border-radius:3px;width:60%" /></p>
+                                    </div>
+                                    <div class="modal-footer1 hover1">
+                                        <button type="submit" style="font-size:18px;border:2px solid white;background:black;color:white;margin-right:5px;font-size:18px;margin-bottom:20px;margin-top:20px;margin-left:80%">
+                                            Đăng nhập
+                                        </button>
+                                        <a href="/User/LoginFacebook">
+                                            <img src="~/Asset/Client/facebook.png" /><span style="color:white;">Đăng nhập với facebook</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            }
+
+
+                        </div>
+                    </li>
+
+                }
+                else
+                {
+                    <li style="" class="hover1">
+                        <a href="@item.Link" target="@item.Target"
+                           style="background:black;color:white;margin-right:5px">@item.Text</a>
+                    </li>
+                }
+            }
+        </ul>
+    }
+    else
+    {
+        <ul>
+            <li style="margin-right:20px">
+                
+                <div class="dropdown1">
+                    <span class="nut" style="color:white">@session.Name
+                        <i class="fas fa-user-circle fa-fw"></i>
+                    </span>
+                    <div class="dropdown-content1">
+                        <p><a href="/quan-li-tai-khoan" class="dropdown-item">Quản lí Tài Khoản</a></p>
+                        <p><a href="/quan-ly-hoa-don-0" class="dropdown-item">Quản lý hóa đơn</a></p>
+                    </div>
+                </div>
+            </li>
+            <li style="margin-right:20px">
+               
+                @Html.ActionLink("Đăng xuất", "DangXuat", "User",null,new { @class = "nut", @style = "color:white;" })
+            </li>
+        </ul>
+    }
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>

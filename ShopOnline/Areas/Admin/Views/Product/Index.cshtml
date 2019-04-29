@@ -1,0 +1,151 @@
+﻿@using _Models.EF;
+@using _Models.DAO;
+@model PagedList.IPagedList<_Models.EF.Product>
+@using PagedList.Mvc;
+@{
+    /**/
+    ViewBag.Title = "Quản trị người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+@section jsFooter{
+
+    <script src="~/Asset/js/Controller/Product.js"></script>
+}
+@{
+    int pagenext = 1;
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+           Data Table Product
+        </div>
+        <div class="card-body  table-responsive ">
+            @using (Html.BeginForm("Index", "Product", FormMethod.Get))
+            {
+                <a href="/Admin/Product/Create" class="btn">Create</a>
+                <div class="row">
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="searchString" value="@ViewBag.searchString" placeholder="Tìm kiếm Contact" class="form-control" />
+
+                        <button type="submit" id="btnSeach" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <table class="table table-bordered table-striped table-hover" id="tableProduct">
+                <thead class="text-center">
+                    <tr>
+                        <th>Option</th>
+                        <th>ProductID</th>
+                        <th>ProductName</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>PromotionPrice</th>
+                        <th>Quantity</th>
+                        <th>CategoryName</th>
+                        <th>Status</th>
+                        <th>Tophot</th>
+                        <th>Viewcount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.PageNumber != 1)
+                    {
+                        pagenext = Model.PageNumber - 1;
+                    }
+                    else
+                    {
+                        if (Model.PageCount <= 2)
+                        {
+                            pagenext = 1;
+                        }
+                        else
+                        {
+                            pagenext = 1;
+                        }
+                    }
+                    @foreach (var item in Model)
+                    {
+
+                        ProductCategoryDAO productCategoryDAO = new ProductCategoryDAO();
+                        var CategoryName = productCategoryDAO.GetProductCategory(item.CategoryID).CategoryName;
+                        string promotionPrice;
+                        string quantity;
+                        if (item.PromotionPrice != null)
+                        {
+                            promotionPrice = item.PromotionPrice.ToString() + "%";
+                        }
+                        else
+                        {
+                            promotionPrice = "Chưa có khuyến mãi";
+                        }
+                        if (item.Quantity == 0)
+                        {
+
+                            quantity = "Tạm hết hàng";
+                        }
+                        else
+                        {
+                            quantity = item.Quantity.ToString() + " món";
+                        }
+
+                        <tr id="row_@item.ProductID">
+                            <td>
+                                @Ajax.ActionLink("Remove","Remove",new {
+                               @ProductID=item.ProductID},new AjaxOptions() {
+                                   Confirm="Bạn có chắc là muốn xóa không",
+                                   OnComplete="$('#row_"+item.ProductID+"').remove();",
+                                   HttpMethod="Delete",
+                                   OnSuccess="$(document).ready(function(){" +
+                                   "alert(\"Bạn đã xóa Product có tên là: "+item.ProductName+"\");" +
+                                   "var rowcount=$('#tableProduct tr').length;" +
+                                   "if(rowcount==1)location.replace(location.pathname+\"?page="+pagenext+"\");" +
+                                   "});"
+                               })
+                                ||
+                                @Html.ActionLink("Edit", "Edit","Product", new {
+                           @id=item.ProductID,@page=Model.PageNumber},
+                               FormMethod.Get)
+                            </td>
+                            <th>@item.ProductID</th>
+
+                            <th>@item.ProductName</th>
+                            <th>
+                                @if (item.Image != null)
+                                {
+                                    <img src="@item.Image" class="img-responsive" height="100" width="100" />
+                                }
+                                else
+                                {
+                                    <img src="/Data/images/NoImage.png" class="img-responsive" height="100" width="100" />
+                                }
+                            </th>
+                            <th>@string.Format("{0:#,###,### VND}", item.Price)</th>
+                            <th>@promotionPrice</th>
+                            <th>@quantity</th>
+                            <th>@item.ProductCategory.CategoryName</th>
+                            <th><a href="#" class="btn-active" data-id="@item.ProductID">@(item.Status ? "Kích Hoạt" : "Đã Khóa")</a></th>
+                            <th>@item.Tophot</th>
+                            <th>@item.Viewcount</th>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page, searchString = ViewBag.searchString }))
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+    </div>
+    if (TempData["msg"] != null)
+    {
+        @Html.Raw(TempData["msg"]);
+    }
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        })
+    </script>
+}

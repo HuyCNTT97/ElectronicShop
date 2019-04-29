@@ -1,0 +1,9 @@
+﻿@model _Models.EF.Contact
+@{
+    ViewBag.Title = "trang giới thiệu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-12" style="background:white;padding:10px">
+    @Html.Raw(Model.Content)
+</div>
+

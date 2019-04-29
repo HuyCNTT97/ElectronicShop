@@ -1,0 +1,26 @@
+﻿@model _Models.EF.Contact
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl"
+      rel="stylesheet" type="text/css" />
+
+
+@section jsFooter{
+
+}
+
+<div class="content">
+
+    @using (Html.BeginForm("Register", "User", FormMethod.Post))
+    {
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        { Html.RenderAction("Create", "User"); }
+    }
+</div>
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>

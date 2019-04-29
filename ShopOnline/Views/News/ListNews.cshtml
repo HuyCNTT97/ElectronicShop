@@ -1,0 +1,7 @@
+﻿@model List<_Models.EF.News>
+<ul >
+    @foreach (var item in Model)
+    {
+        <li class="mautext"><a href="/tin-tuc-@item.MetaTitle-@item.NewsID">@item.NewsName</a></li>
+    }
+</ul>

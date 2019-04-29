@@ -1,0 +1,267 @@
+﻿@model _Models.EF.Product
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+    <script>
+
+        $('#btnSetImage').click(function () {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+            $('#txtImage').val(fileUrl);
+        }
+        finder.popup();
+    })
+        CKEDITOR.replace("txtContent", {
+            customConfig: './config.js'
+
+    });
+
+    </script>
+}
+@using (Html.BeginForm("Edit", "Product", new { @ProductID = Model.ProductID }, FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Create Product</h4>
+        <h4>@Html.ActionLink("Quay lại trang Index", "Index", "Product")</h4>
+        <hr />
+        @Html.TextBox("priorlypage", ViewBag.priorlypage as string, new { style = "display: none" })
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.Label("", "ProductID", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.TextBoxFor(model => model.ProductID, new {
+                @class="form-control",@disabled="true",@value=Model.ProductID})*@
+                @Html.DisplayFor(model => model.ProductID)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @{
+            string nguoiDungHienTai = ShopOnline.Areas.Admin.Controllers.BaseController.NguoiDungHienTai.UserAccount;
+        }
+        @Html.TextBoxFor(model => model.CreateBy, new { @class = "sr-only", @Value = nguoiDungHienTai })
+        <div class="form-group">
+            @Html.LabelFor(model => model.MetaTitle, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MetaTitle, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MetaTitle, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("", "CategoryName", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.CategoryID, ViewBag.listCategory as SelectList,
+new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Image, new { @class = "col-md-6", @id = "txtImage" })
+                <a href="#" id="btnSetImage">SetImage</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>hình ảnh khác</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.hinhanh, new { @class = "col-md-6", @id = "hinhanh"
+, @hidden = "true",
+               @Value = Model.hinhanh == null ? "/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png" : Model.hinhanh
+
+                })
+                @{
+
+                    var duongdanhinh = Model.hinhanh==null? "/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png|/Data/images/NoImage/NoImage.png" : Model.hinhanh;
+                    var mang = duongdanhinh.Split('|');
+                }
+                
+                <button hidden type="button" onclick="$('#Picture1').trigger('onchange')" class="btn"> <i class="fa fa-camera fa-4x"></i><i>+</i></button>
+                <input type="file" hidden onchange="readURL(this);" name="Picture1" id="Picture1" accept="image/*" />
+                <img  src="@mang[0]" class="hinh" style="max-width:10%;max-height:100%;position:relative;" />
+                <span onclick="back(this);" style="position:absolute;" class="cl" > <i class="fa fa-close">x</i></span>
+
+                <button hidden type="button" style="margin-left:3%" onclick="$('#Picture2').trigger('onchange')" class="btn"> <i class="fa fa-camera fa-4x"></i><i>+</i></button>
+                <input type="file" hidden onchange="readURL(this);" name="Picture2" id="Picture2" accept="image/*" />
+                <img  src="@mang[1]" class="hinh" style="max-width:10%;max-height:100%;position:relative;margin-left:3%" />
+                <span onclick="back(this);" style="position:absolute;" class="cl" > <i class="fa fa-close">x</i></span>
+
+                <button hidden type="button" style="margin-left:3%;" onclick="$('#Picture3').trigger('onchange')" class="btn"> <i class="fa fa-camera fa-4x"></i><i>+</i></button>
+                <input type="file" hidden onchange="readURL(this);" name="Picture3" id="Picture3" accept="image/*" />
+                <img  src="@mang[2]" class="hinh" style="max-width:10%;max-height:100%;position:relative;margin-left:3%" />
+                <span onclick="back(this);" style="position:absolute;" class="cl" > <i class="fa fa-close">x</i></span>
+                <button hidden type="button" style="margin-left:3%" onclick="$('#Picture4').trigger('onchange')" class="btn"> <i class="fa fa-camera fa-4x"></i><i>+</i></button>
+                <input  type="file" hidden onchange="readURL(this);" name="Picture4" id="Picture4" accept="image/*" />
+                <img  src="@mang[3]" class="hinh" style="max-width:10%;max-height:100%;position:relative;margin-left:3%" />
+                <span onclick="back(this);" style="position:absolute;" class="cl" > <i class="fa fa-close">x</i></span>
+
+            </div>
+            <script>
+                function readURL(input) {
+                    var finder = new CKFinder();
+                    finder.selectActionFunction = function (fileUrl) {
+                       
+                            $(input).attr("src", fileUrl);
+                            $(input).next().attr('src', fileUrl).attr('hidden', false);
+                            var img = $('.hinh');
+                            var duongdan = '';
+                            for (var i = 0; i < img.length; i++) {
+
+                                duongdan = duongdan + $(img[i]).attr('src') + '|';
+                            }
+                            $('#hinhanh').val(duongdan);
+                        //alert($("#hinhanh").val());
+                       
+                    }
+                    finder.popup();
+
+                    //var reader = new FileReader();
+                    $(input).next().show();
+
+                    $($(input).next()).next().attr('hidden', false);
+                    $(input).prev().attr('hidden', true);
+                    //reader.readAsDataURL(input.files[0]);
+
+                }
+                function back(input) {
+                    $(input).prev().attr('src', '/Data/images/NoImage/NoImage.png').hide();
+                    $(input).attr('hidden', true);
+                    $($(input).prev()).prev().val(null);
+                    $($($(input).prev()).prev()).prev().attr('hidden', false);
+
+                }
+
+            </script>
+            <style>
+                .fa:hover {
+                    color: red;
+                    cursor: pointer;
+                }
+            </style>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.MoreImages, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MoreImages, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MoreImages, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @type = "number", @min = "0", @step = "0.01", @value = "0", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PromotionPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PromotionPrice, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PromotionPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IncludeVAT, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IncludeVAT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.IncludeVAT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Detail, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Detail, new { @class="form-control"
+           ,@id="txtContent"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Warranty, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Warranty, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Warranty, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MetaKeywords, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MetaKeywords, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MetaKeywords, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MetaDescriptions, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MetaDescriptions, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MetaDescriptions, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("tempstatus",new SelectList(new string[] {"Kích Hoạt","Đã Khóa" }),new
+           {
+               @class="form-control"
+           })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tophot, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Tophot, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Tophot, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+    if (TempData["msg"] != null)
+    {
+        @Html.Raw(TempData["msg"]);
+    }
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

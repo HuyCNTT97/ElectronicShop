@@ -1,0 +1,23 @@
+﻿@model List<ShopOnline.Models.CartItem>
+<div class="cart">
+    <p>
+        @{ 
+            double? sum = 0;
+            foreach (var item in Model)
+            {
+                if (item.Product.PromotionPrice != null &&item.Product.PromotionPrice!= 0)
+                {
+                    sum = sum + item.Product.Price - item.Product.Price * item.Product.PromotionPrice / 100;
+                }
+                else
+                {
+                    sum = sum + item.Product.Price;
+                }
+            }
+        }
+       Chào mừng đến với store <span><a href="/Cart">Giỏ Hàng</a>:</span><div id="dd" class="wrapper-dropdown-2">
+            @Model.Count sản phẩm - @string.Format("{0:#,###,### VND}",@sum)
+           
+        </div>
+    </p>
+</div>

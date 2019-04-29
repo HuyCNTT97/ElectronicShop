@@ -1,0 +1,120 @@
+﻿@using _Models.EF;
+@using _Models.DAO;
+@model PagedList.IPagedList<_Models.EF.Menu>
+@using PagedList.Mvc;
+@{
+        /**/
+        ViewBag.Title = "Quản trị người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+@section jsFooter{
+   
+    <script src="~/Asset/js/Controller/MenuController.js"></script>
+   
+    }
+@{
+    int nextpage = 1;
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Data Table Menu
+        </div>
+        <div class="card-body">
+            <a href="/Admin/Menu/Create" class="btn">Create</a>
+
+            @using (Html.BeginForm("Index", "Menu", FormMethod.Get))
+            {
+                <div class="row">
+
+
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchContent" value="@ViewBag.searchString" placeholder="Tìm kiếm user" class="form-control" />
+
+                        <button type="submit" id="btnSeachUser" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover bg-light table-striped" id="tableMenu" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>MenuID</th>
+                            <th>Text</th>
+                            <th>Link</th>
+                            <th>Target</th>
+                            <th>MenuTypeName</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tboy>
+                        @if (Model.IsFirstPage != true)
+                        {
+                            nextpage = Model.PageNumber - 1;
+                        }
+                        else
+                        {
+                            if (Model.PageCount <= 2)
+                            {
+                                nextpage = 1;
+                            }
+                            else
+                            {
+                                nextpage = 2;
+                            }
+                        }
+                        @foreach (var item in Model)
+                        {
+                            <tr id="row_@item.MenuID">
+                                <td>
+                                    @Ajax.ActionLink("Remove", "Remove", new { @menuID=item.MenuID},
+                                   new AjaxOptions()
+                                   {
+                                       Confirm="Bạn có thật sự muốn xóa không?",
+                                       HttpMethod="DELETE",
+                                       OnComplete="$('#row_"+item.MenuID+"').remove();",
+                                       OnSuccess="$(document).ready(function(){" +
+                                       "alert(\"Bạn đã xóa menu text là:"+item.Text+"\");" +
+                                       "var rowcount=$('#tableMenu tr').length;" +
+                                       "if(rowcount==1)location.replace(location.pathname+" +
+                                       "\"?page="+nextpage+"\");" +
+                                       "});"
+
+                                   })
+                                    ||
+                                    @Html.ActionLink("Edit","Edit","Menu", new {@MenuID=item.MenuID,@pageprior=Model.PageNumber },FormMethod.Get)
+                                </td>
+                                <td>@item.MenuID</td>
+                                <td>@item.Text</td>
+                                <td><a href="@item.Link">@item.Link</a></td>
+                                <td>@item.Target</td>
+                                @{
+                                    MenuTypeDAO menuTypeDAO = new MenuTypeDAO();
+                                    var menuname = menuTypeDAO.GetMenuType(item.MenuTypeID).Name;
+                                }
+                                <td>@menuname</td>
+                                <td>
+                                    <a href="#" class="btn-active" data-id="@item.MenuID">
+                                        @(item.Status ? "Kích Hoạt" : "Đã Khóa")
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tboy>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, SearchContent = ViewBag.Search }))
+            </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        @if (TempData["msg"] != null)
+        {
+            @Html.Raw(TempData["msg"]);
+        }
+    </div>
+
+}

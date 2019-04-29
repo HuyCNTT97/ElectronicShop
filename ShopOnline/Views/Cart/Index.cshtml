@@ -1,0 +1,82 @@
+﻿@model List<ShopOnline.Models.CartItem>
+@{
+    /**/
+
+    ViewBag.Title = "thông tin giỏ hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Asset/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="~/Asset/Client/css/CSSTable.css" rel="stylesheet" />
+@section jsFooter{
+    <script src="~/Asset/Client/js/CartController.js"></script>
+
+}
+@if (Model.Count > 0)
+{
+    double tong = 0;
+    <table style="margin:10px 0;width:100%; " align="center" class="table table-responsive  table-striped">
+        <thead class="font-weight-bold text-white" style="background:#808080;">
+            <tr>
+                <td>Mã SP</td>
+                <td>Tên SP</td>
+                <td>Ảnh sp</td>
+                <td>Số lượng</td>
+                <td>Đơn giá</td>
+                <td>Thành tiền</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product.ProductID</td>
+                    <td>@item.Product.ProductName</td>
+                    <td><img src="@item.Product.Image" alt="@item.Product.ProductName" width="150" height="150"></td>
+                    <td><input type="number" class="txtQuantity" data-id="@item.Product.ProductID" value="@item.Quantity"></td>
+                    @if (item.Product.PromotionPrice != null && item.Product.PromotionPrice != 0)
+                    {
+                        tong = tong + (item.Product.Price - item.Product.Price * double.Parse((item.Product.PromotionPrice / 100).ToString())) * item.Quantity;
+                        <td>@string.Format("{0:#,###,### VND}", item.Product.Price - item.Product.Price * item.Product.PromotionPrice / 100)</td>
+                        <td>@string.Format("{0:#,###,### VND}", (item.Product.Price - item.Product.Price * item.Product.PromotionPrice / 100) * item.Quantity)</td>
+
+                    }
+                    else
+                    {
+                        tong = tong + item.Product.Price * item.Quantity;
+                        <td>@string.Format("{0:#,###,### VND}", item.Product.Price)</td>
+                        <td>@string.Format("{0:#,###,### VND}", item.Product.Price * item.Quantity)</td>
+                    }
+                    <td><a href="#" data-id="@item.Product.ProductID" class="btn-delete">Hủy</a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+    <button class="btn" id="btnContinue">Tiếp tục mua hàng</button>
+    <button class="btn" id="btnUpdate">Cập nhập giỏ hàng</button>
+    <button class="btn" id="btnDeleteAll">Xóa giỏ hàng</button>
+    <button class="btn" id="btnPayment">Thanh toán</button>
+    <div style="background:#808080;color:black;font-weight:bold;margin-top:10px;" class="col-md-3">
+        @Html.Label("", "Tổng Tiền", htmlAttributes: new { }):
+        @Html.Label("lblTong", string.Format("{0:#,###,### VND}", tong), htmlAttributes: new { @style = "color:#cb9292" })
+    </div>
+}
+else
+{
+    <h3 class="alert alert-warning">Chưa có sản phẩm nào nào được thêm</h3>
+    <span style="clear:both;"></span>
+    <div>
+        @{
+            Html.RenderAction("sanphamhot", "Product");
+        }
+    </div>
+}
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+
+
+
+

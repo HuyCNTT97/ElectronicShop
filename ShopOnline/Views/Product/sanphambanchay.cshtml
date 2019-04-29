@@ -1,0 +1,98 @@
+﻿@using PagedList.Mvc
+@model PagedList.IPagedList<_Models.EF.Product>
+
+@{
+    /**/
+
+    ViewBag.Title = "danh sách sản phẩm hot";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var ProductsCategory = ViewBag.ProductCategory as _Models.EF.ProductCategory;
+}
+@section csschirld{
+
+    <link href="~/Asset/Client/css/cssKhungProDuct.css" rel="stylesheet" />
+}
+
+<div class="header_slide" style="background:white;">
+    <div class="header_bottom_left">
+        <div class="categories">
+            <h2 style="text-align:center;font-size:25px;font-weight:bold;color:white;">Danh Mục Tin Tức</h2>
+            @{ Html.RenderAction("ListProductCategory", "ProductCategory");}
+
+        </div>
+    </div>
+    <div class="header_bottom_right">
+        <div class="section group">
+            <div class="content">
+                <div class="content_top">
+                    <div class="heading">
+                        <h3>Tất Cả Sản Phẩm bán chạy</h3>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="section group">
+                    @foreach (var item in Model)
+                    {
+                        var url = "/chi-tiet/" + item.MetaTitle + "-" + item.ProductID;
+                        <div class="grid_1_of_4 images_1_of_4">
+                            <a href="@url"><img src="@item.Image" width="170" height="170px" alt="@item.ProductName" /></a>
+                            <h2>
+                                @if (item.ProductName.Length <= 23)
+                                {
+                                    string productname = new string('-', 14);
+                                    @Html.Raw(item.ProductName + productname);
+                                }
+                                else
+                                {
+                                    @Html.Raw(item.ProductName);
+                                }
+                            </h2>
+                            <div class="price-details">
+                                <div class="price-number">
+                                    @if (item.Price == 0)
+                                    {
+                                        <p>
+                                            <span class="rupees">Liên Hệ</span>
+                                        </p>
+                                    }
+                                    else
+                                    {
+                                        if (item.PromotionPrice != null && item.PromotionPrice != 0)
+                                        {
+                                            var giakm = item.Price - item.Price * item.PromotionPrice / 100;
+                                            <p>
+                                                <span class="rupees" style="text-decoration:line-through">@string.Format("{0:#,###,### VND}", item.Price)</span>
+                                            </p>
+                                            <p>
+                                                <span class="rupees" style="color:red">@string.Format("{0:#,###,### VND}", giakm)</span>
+                                            </p>
+                                        }
+                                        if (item.PromotionPrice == null || item.PromotionPrice == 0)
+                                        {
+
+                                            <p>
+                                                <span class="rupees">@string.Format("{0:#,###,### VND}", item.Price)</span>
+                                            </p>
+
+                                        }
+                                    }
+                                </div>
+                                <div class="add-cart">
+                                    <h4><a href="/them-gio-hang?productID=@item.ProductID&quantity=1">Thêm Vào Giỏ Hàng</a></h4>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                        </div>
+                    }
+
+
+                </div>
+            </div>
+            @Html.PagedListPager(Model, page => Url.Action("ListProduct", new { @page = page }))
+
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
