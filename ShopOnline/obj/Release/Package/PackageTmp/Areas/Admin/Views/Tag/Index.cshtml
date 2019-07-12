@@ -1,0 +1,96 @@
+﻿@using _Models.EF;
+@using _Models.DAO;
+@model PagedList.IPagedList<_Models.EF.Tag>
+@using PagedList.Mvc;
+@{
+    /**/
+    ViewBag.Title = "Quản trị người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+@section jsFooter{
+}
+@{
+    @Html.AntiForgeryToken()
+    int pagenext = 1;
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Data Table Tag
+        </div>
+        <div class="card-body table-responsive">
+            <a href="/Admin/Tag/Create" class="btn">Create</a>
+            @using (Html.BeginForm("Index", "Tag", FormMethod.Get))
+            {
+                <div class="row">
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchAbout" value="@ViewBag.searchString" placeholder="Tìm kiếm Tags" class="form-control" />
+
+                        <button type="submit" id="btnSeach" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <table class="table table-bordered table-striped table-hover" id="tableTag">
+                <thead class="text-center">
+                    <tr>
+                        <th>Option</th>
+                        <th>NameTag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.PageNumber != 1)
+                    {
+                        pagenext = Model.PageNumber - 1;
+                    }
+                    else
+                    {
+                        if (Model.PageCount <= 2)
+                        {
+                            pagenext = 1;
+                        }
+                        else
+                        {
+                            pagenext = 2;
+                        }
+                    }
+                    @foreach (var item in Model)
+                    {
+                        <tr id="row_@item.TagID">
+                            <td>
+                                @Ajax.ActionLink("Remove","Remove",new {@TagID=item.TagID },
+                           new AjaxOptions() {
+                               Confirm="Bạn có chắc chắn muốn xóa không",
+                               OnComplete="$('#row_"+item.TagID+"').remove();",
+                               HttpMethod="Delete",
+                               OnSuccess="$(document).ready(function(){" +
+                               "alert(\"Bạn đã xóa slide có Name="+item.NameTag+"\");" +
+                               "var rowcount=$('#tableTag tr').length;if(rowcount==1)" +
+                               "location.replace(location.pathname+\"?page="+pagenext+"\");" +
+                               "});"
+                           })||
+                                @Html.ActionLink("Edit", "Edit", new { @id = item.TagID, @page = Model.PageNumber }, FormMethod.Get)
+                            </td>
+                            <td>@item.NameTag</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page, searchString = ViewBag.searchString }))
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+    </div>
+    if (TempData["msg"] != null)
+    {
+        @Html.Raw(TempData["msg"]);
+    }
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        })
+    </script>
+}
+

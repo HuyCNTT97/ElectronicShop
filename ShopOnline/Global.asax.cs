@@ -10,6 +10,21 @@ namespace ShopOnline
 {
     public class MvcApplication : System.Web.HttpApplication
     {
+        void Application_BeginRequest(Object sender, EventArgs e)
+        {
+            switch (Request.Url.Scheme)
+            {
+                case "https":
+                    Response.AddHeader("Strict-Transport-Security", "max-age=300");
+                    break;
+                case "http":
+                    var path = "https://" + Request.Url.Host + Request.Url.PathAndQuery;
+                    Response.Status = "301 Moved Permanently";
+                    Response.AddHeader("Location", path);
+                    break;
+            }
+
+        }
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

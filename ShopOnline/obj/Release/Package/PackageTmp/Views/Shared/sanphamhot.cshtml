@@ -1,0 +1,74 @@
+﻿@{
+    var hotproducts = TempData["listhotproduct"] as List<_Models.EF.Product>;
+}
+@section csschirld{
+
+    <link href="~/Asset/Client/css/cssKhungProDuct.css" rel="stylesheet" />
+}
+<div class="content_bottom">
+    <div class="heading">
+        <h3>Sản Phẩm Hot</h3>
+    </div>
+    <div class="see">
+        <p><a href="#">Xem tất cả sản phẩm</a></p>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="section group">
+    @foreach (var item in hotproducts)
+    {
+        var url = "/chi-tiet/" + item.MetaTitle + "-" + item.ProductID;
+
+        <div class="grid_1_of_4 images_1_of_4">
+            <a href="@url"><img src="@item.Image" width="213.81px" height="178.17px" alt="@item.ProductName" /></a>
+            <h2>
+                @if (item.ProductName.Length <= 23)
+                {
+                    string productname = new string('-', 14);
+                    @Html.Raw(item.ProductName + productname);
+                }
+                else
+                {
+                    @Html.Raw(item.ProductName);
+                }
+            </h2>
+            <div class="price-details">
+                <div class="price-number">
+                    @if (item.Price == 0)
+                    {
+                        <p>
+                            <span class="rupees">Liên Hệ</span>
+                        </p>
+                    }
+                    else
+                    {
+                        if (item.PromotionPrice != null && item.PromotionPrice != 0)
+                        {
+                            var giakm = item.Price - item.Price * item.PromotionPrice / 100;
+                            <p>
+                                <span class="rupees" style="text-decoration:line-through">@string.Format("{0:#,###,### VND}", item.Price)</span>
+                            </p>
+                            <p>
+                                <span class="rupees" style="color:red">@string.Format("{0:#,###,### VND}", giakm)</span>
+                            </p>
+                        }
+                        if (item.PromotionPrice == null || item.PromotionPrice == 0)
+                        {
+
+                            <p>
+                                <span class="rupees" style="text-decoration:line-through">@string.Format("{0:#,###,### VND}", item.Price)</span>
+                            </p>
+
+                        }
+                    }
+                </div>
+                <div class="add-cart">
+                    <h4><a href="them-gio-hang?productID=@item.ProductID&quantity=1">Thêm Vào Giỏ Hàng</a></h4>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    }
+
+</div>

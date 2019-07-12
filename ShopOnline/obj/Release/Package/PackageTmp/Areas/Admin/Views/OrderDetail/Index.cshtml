@@ -1,0 +1,91 @@
+﻿@model PagedList.IPagedList<_Models.EF.OrderDetail>
+@using PagedList.Mvc;
+@using _Models.DAO;
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+
+    <script src="~/Asset/js/Controller/OrderController.js"></script>
+<script src="~/Asset/js/Controller/OrderDetailController.js"></script>
+}
+@{
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Data Table Order
+        </div>
+        <div class="card-body table-responsive">
+            @using (Html.BeginForm("Index", "News", FormMethod.Get))
+            {
+                <a href="/Admin/News/Create" class="btn ">Create</a>
+                <div class="row">
+
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchOrder" value="@ViewBag.Search" placeholder="Tìm kiếm Hóa Đơn" class="form-control" />
+                        <button type="submit" id="btnSeachNews" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover bg-light table-striped " id="tableNews" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td>OrderID</td>
+                            <td>ProductName</td>
+                            <td>Quantity</td>
+                            <td>PriceWhenBuyAtTime</td>
+                            <td>Processing status</td>
+                            <td>Shipping status</td>
+                            <td>Delivered status</td>
+
+                        </tr>
+                    </thead>
+                    <tboy>
+                       
+                        @foreach (var item in Model)
+                        {
+                           
+                             
+                        <tr>
+                            <td>@item.OrderID</td>
+                           
+                            <td>@item.Product.ProductName</td>
+                            <td>@item.Quantity</td>
+                            <td>
+                                @string.Format("{0:#,###,###} VND",item.PriceWhenBuyAtTime)
+                            </td>
+                            <td><a href="#" class="btn-xuli" data-orderID="@item.OrderID" data-productID="@item.ProductID">@(bool.Parse(item.Trangthaixuli.ToString()) ? "Đã xử lí" : "Chưa xử lí")</a></td>
+                            <td><a href="#" class="btn-giao" data-orderID="@item.OrderID" data-productID="@item.ProductID">@(bool.Parse(item.Trangthaigiao.ToString()) ? "Đang giao" : "Chưa giao")</a></td>
+                            <td><a href="#" class="btn-thanhtoan" data-orderID="@item.OrderID" data-productID="@item.ProductID">@(bool.Parse(item.Trangthaithanhtoan.ToString()) ? "Đã nhận và thanh toán" : "Chưa nhận")</a></td>
+                        </tr>
+                        }
+                    </tboy>
+                </table>
+                <div class="">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page, SearchOrder = ViewBag.Search }))
+                </div>
+                <div class="">
+                    <p class="text-right" style="font-size: 20px;color:red">Tổng Tiền: @string.Format("{0:#,###,###} VND",
+                                                                                     (double)ViewBag.Tong)</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        @if (TempData["msg"] != null)
+        {
+            @Html.Raw(TempData["msg"]);
+        }
+    </div>
+
+}
+
+

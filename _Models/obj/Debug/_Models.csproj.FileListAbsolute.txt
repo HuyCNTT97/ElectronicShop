@@ -1,0 +1,90 @@
+D:\ShopOnline\_Models\bin\Debug\_Models.dll.config
+D:\ShopOnline\_Models\bin\Debug\_Models.dll
+D:\ShopOnline\_Models\bin\Debug\_Models.pdb
+D:\ShopOnline\_Models\bin\Debug\EntityFramework.dll
+D:\ShopOnline\_Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\ShopOnline\_Models\bin\Debug\EntityFramework.xml
+D:\ShopOnline\_Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\ShopOnline\_Models\obj\Debug\_Models.csprojAssemblyReference.cache
+D:\ShopOnline\_Models\obj\Debug\_Models.csproj.CoreCompileInputs.cache
+D:\ShopOnline\_Models\obj\Debug\_Models.csproj.CopyComplete
+D:\ShopOnline\_Models\obj\Debug\_Models.dll
+D:\ShopOnline\_Models\obj\Debug\_Models.pdb
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\bin\Debug\_Models.dll.config
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\bin\Debug\_Models.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\bin\Debug\_Models.pdb
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\bin\Debug\EntityFramework.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\bin\Debug\EntityFramework.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\obj\Debug\_Models.csprojAssemblyReference.cache
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\obj\Debug\_Models.csproj.CoreCompileInputs.cache
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\obj\Debug\_Models.csproj.CopyComplete
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\obj\Debug\_Models.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\_Models\obj\Debug\_Models.pdb
+D:\OnlineShopGithubBay\ShopOnline\_Models\bin\Debug\_Models.dll.config
+D:\OnlineShopGithubBay\ShopOnline\_Models\bin\Debug\_Models.dll
+D:\OnlineShopGithubBay\ShopOnline\_Models\bin\Debug\_Models.pdb
+D:\OnlineShopGithubBay\ShopOnline\_Models\bin\Debug\EntityFramework.dll
+D:\OnlineShopGithubBay\ShopOnline\_Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\OnlineShopGithubBay\ShopOnline\_Models\bin\Debug\EntityFramework.xml
+D:\OnlineShopGithubBay\ShopOnline\_Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\OnlineShopGithubBay\ShopOnline\_Models\obj\Debug\_Models.dll
+D:\OnlineShopGithubBay\ShopOnline\_Models\obj\Debug\_Models.pdb
+D:\do an thuc tap\_Models\bin\Debug\_Models.dll.config
+D:\do an thuc tap\_Models\bin\Debug\_Models.dll
+D:\do an thuc tap\_Models\bin\Debug\_Models.pdb
+D:\do an thuc tap\_Models\bin\Debug\EntityFramework.dll
+D:\do an thuc tap\_Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\do an thuc tap\_Models\bin\Debug\EntityFramework.xml
+D:\do an thuc tap\_Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\do an thuc tap\_Models\obj\Debug\_Models.csprojAssemblyReference.cache
+D:\do an thuc tap\_Models\obj\Debug\_Models.csproj.CoreCompileInputs.cache
+D:\do an thuc tap\_Models\obj\Debug\_Models.csproj.CopyComplete
+D:\do an thuc tap\_Models\obj\Debug\_Models.dll
+D:\do an thuc tap\_Models\obj\Debug\_Models.pdb
+D:\do an thuc tap\ver 3\_Models\bin\Debug\_Models.dll.config
+D:\do an thuc tap\ver 3\_Models\bin\Debug\_Models.dll
+D:\do an thuc tap\ver 3\_Models\bin\Debug\_Models.pdb
+D:\do an thuc tap\ver 3\_Models\bin\Debug\EntityFramework.dll
+D:\do an thuc tap\ver 3\_Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\do an thuc tap\ver 3\_Models\bin\Debug\EntityFramework.xml
+D:\do an thuc tap\ver 3\_Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\do an thuc tap\ver 3\_Models\obj\Debug\_Models.csprojAssemblyReference.cache
+D:\do an thuc tap\ver 3\_Models\obj\Debug\_Models.csproj.CoreCompileInputs.cache
+D:\do an thuc tap\ver 3\_Models\obj\Debug\_Models.csproj.CopyComplete
+D:\do an thuc tap\ver 3\_Models\obj\Debug\_Models.dll
+D:\do an thuc tap\ver 3\_Models\obj\Debug\_Models.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\bin\Debug\_Models.dll.config
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\bin\Debug\_Models.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\bin\Debug\_Models.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\bin\Debug\EntityFramework.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\bin\Debug\EntityFramework.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\obj\Debug\_Models.csprojAssemblyReference.cache
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\obj\Debug\_Models.csproj.CoreCompileInputs.cache
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\obj\Debug\_Models.csproj.CopyComplete
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\obj\Debug\_Models.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\_Models\obj\Debug\_Models.pdb
+D:\OnlineShop\_Models\bin\Debug\_Models.dll.config
+D:\OnlineShop\_Models\bin\Debug\_Models.dll
+D:\OnlineShop\_Models\bin\Debug\_Models.pdb
+D:\OnlineShop\_Models\bin\Debug\EntityFramework.dll
+D:\OnlineShop\_Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\OnlineShop\_Models\bin\Debug\EntityFramework.xml
+D:\OnlineShop\_Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\OnlineShop\_Models\obj\Debug\_Models.dll
+D:\OnlineShop\_Models\obj\Debug\_Models.pdb
+D:\OnlineShop_BanCuoi\_Models\bin\Debug\_Models.dll.config
+D:\OnlineShop_BanCuoi\_Models\bin\Debug\_Models.dll
+D:\OnlineShop_BanCuoi\_Models\bin\Debug\_Models.pdb
+D:\OnlineShop_BanCuoi\_Models\bin\Debug\EntityFramework.dll
+D:\OnlineShop_BanCuoi\_Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\OnlineShop_BanCuoi\_Models\bin\Debug\EntityFramework.xml
+D:\OnlineShop_BanCuoi\_Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\OnlineShop_BanCuoi\_Models\obj\Debug\_Models.dll
+D:\OnlineShop_BanCuoi\_Models\obj\Debug\_Models.pdb
+D:\OnlineShop_BanCuoi\_Models\obj\Debug\_Models.csprojAssemblyReference.cache
+D:\OnlineShop_BanCuoi\_Models\obj\Debug\_Models.csproj.CoreCompileInputs.cache
+D:\OnlineShop_BanCuoi\_Models\obj\Debug\_Models.csproj.CopyComplete

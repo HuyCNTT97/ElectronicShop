@@ -1,0 +1,35 @@
+﻿.images_1_of_4 {
+    background: beige;
+    margin-left:2px;
+    min-height: 360px;
+    
+}
+
+    .images_1_of_4:hover {
+        -webkit-box-shadow: inset 0 0 7px #ccc;
+        cursor: pointer;
+    }
+
+.pagination-container ul.pagination li {
+    display: inline-block;
+}
+.pagination-container a {
+    border: 1px solid rgba(207, 203, 203, 0.30);
+    margin: 0px 3px 0px;
+    text-align: center;
+    display: block;
+    width: 20px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    font-weight: bold;
+}
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+.images_1_of_4 h2 {
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,145 @@
+﻿@model List<_Models.EF.Order>
+@{
+    /**/
+
+    ViewBag.Title = "Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    #header-content {
+        text-align: center;
+    }
+
+    #noidung {
+        border: 1px solid #66a3cf;
+        min-height: 300px;
+        padding: 10px;
+        text-align: center;
+    }
+
+   
+
+    .otext {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 2px 2px 2px 2px #ccc9c9;
+    }
+    table tr td {
+        
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .button {
+        
+        background: #4fa929;
+    }
+
+        .button:hover {
+            background: #4fa929;
+        }
+
+    .success {
+        color: lawngreen;
+    }
+
+    .fail {
+        color: red;
+    }
+
+    .dropdow {
+        padding: 5px;
+        font-size: 18px;
+    }
+</style>
+@section slide{
+    @using (Html.BeginForm("Information", "Home", Model, FormMethod.Post))
+    {
+        if (TempData["msg"] != null)
+        {
+            @Html.Raw(TempData["msg"]);
+        }
+        <div class="header_slide">
+            <div class="header_bottom_left">
+                <div class="categories">
+                    @{Html.RenderAction("OptionAccount", "Home");}
+
+                </div>
+            </div>
+            <div class="header_bottom_right">
+                <div style="text-align:left;font-size:28px;margin-bottom:15px;"><h2>Các Hóa Đơn Của Tôi</h2></div>
+                <div style="margin-bottom:10px;">
+                    Show:
+                    @Html.DropDownList("item", ViewBag.list as List<SelectListItem>,
+                           new
+                           {
+                               @class = "dropdow",
+                               @onchange = "CallChange(this.value)"
+                           }
+                           )
+                </div>
+                @foreach (var item in Model)
+                {
+                    <div style="padding:5px 10px 25px 10px;background:white;margin-bottom:20px;">
+                        <a href="/quan-ly-hoa-don/hoa-don-@item.OrderID" style="color:#1a9cb7;display:block">
+                            <h4 style="font-size:18px">Hóa Đơn:<span style="color:#1a9cb7">@item.OrderID
+                                </span>
+                                </h4>
+                            <h5 style="font-size:14px;color:#808080">Ngày đặt: @item.CreateDay</h5>
+                        </a>
+                       
+                    
+                        <hr style="border:1px solid #66a3cf;" />
+
+                        <table style="margin-top:15px;">
+                            @{ 
+                                _Models.DAO.Order_Detail orderdetaiDAO = new _Models.DAO.Order_Detail();
+                                var list = orderdetaiDAO.ListAll(@item.OrderID);
+                            }
+                            @foreach(var orderDetail in list)
+                            {
+                                <tr >
+                                    <td style="border:1px solid black;width:100px;">
+                                        <img src="@orderDetail.Product.Image" width="80" height="80" />
+                                    </td>
+                                    <td style="vertical-align:top;width:200px;padding-right:10px;">
+                                        @orderDetail.Product.ProductName
+                                    </td>
+                                    <td style="vertical-align:top;width:150px">Số lượng: @orderDetail.Quantity</td>
+                                    <td style="width:100px; text-align:center;vertical-align:middle">
+                                        @if (orderDetail.Trangthaigiao == true)
+                                        {
+                                            <label style="border:1px solid black;
+                                            border-radius:24px;padding:5px;background:#eff0f5">Đã Giao</label>
+                                        }
+                                        else
+                                        {
+                                            <label style="border:1px solid black;
+                                border-radius:24px;padding:5px;background:#eff0f5">Chưa Giao</label>
+
+                                        }
+                                    </td>
+                                    <td style="vertical-align:top;width:200px;">
+                                        @if (orderDetail.NgayGiao != null)
+                                        {
+                                            var temp = (DateTime.Parse(orderDetail.NgayGiao.ToString())).ToShortDateString();
+                                            <span>Giao ngày: @temp</span>
+
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </table>
+                    </div>
+                }
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <script>
+            function CallChange(value) {
+                window.location.href = "/quan-ly-hoa-don-" + value;
+            }
+        </script>
+                        }
+}

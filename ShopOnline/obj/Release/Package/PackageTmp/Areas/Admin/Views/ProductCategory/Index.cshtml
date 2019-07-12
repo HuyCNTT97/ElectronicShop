@@ -1,0 +1,131 @@
+﻿@using _Models.EF;
+@using _Models.DAO;
+@model PagedList.IPagedList<_Models.EF.ProductCategory>
+@using PagedList.Mvc;
+@{
+    /**/
+    ViewBag.Title = "Quản trị người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+@section jsFooter{
+
+    <script src="~/Asset/js/Controller/ProductCategory.js"></script>
+}
+@{
+    int pagenext = 1;
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Table ProductCategory
+        </div>
+        <div class="card-body">
+            <a href="/Admin/ProductCategory/Create" class="btn">Create</a>
+            @using (Html.BeginForm("Index", "ProductCategory", FormMethod.Get))
+            {
+                <div class="row">
+
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchAbout" value="@ViewBag.searchString" placeholder="Tìm kiếm ProductCategory" class="form-control" />
+
+                        <button type="submit" id="btnSeach" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <table class="table table-bordered table-responsive table-striped table-hover" data-resizable="true" id="tableProductCategory">
+                <thead class="text-center">
+                    <tr>
+                        <th>Option</th>
+                        <th> CategoryID </th>
+                        <th> CategoryName </th>
+                        <th> ParentCategoryID </th>
+                        <th> CreateDate </th>
+                        <th> CreateBy </th>
+                        <th> ModifiedDate </th>
+                        <th> ModifiedBy </th>
+                        <th> Status </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.PageNumber != 1)
+                    {
+                        pagenext = Model.PageNumber - 1;
+                    }
+                    else
+                    {
+                        if (Model.PageCount <= 2)
+                        {
+                            pagenext = 1;
+                        }
+                        else
+                        {
+                            pagenext = 1;
+                        }
+                    }
+                    @foreach (var item in Model)
+                    {
+                        <tr id="row_@item.CategoryID">
+                            <td>
+                                @Ajax.ActionLink("Remove", "Remove", new {
+                               @productCategoryID = item.CategoryID }, new AjaxOptions() {
+                                   Confirm="Bạn có chắc là muốn xóa không?",
+                                   OnComplete="$('#row_"+item.CategoryID+"').remove();",
+                                   HttpMethod="Delete",
+                                   OnSuccess="$(document).ready(function(){" +
+                                   "alert(\"Bạn đã xóa ProductCategory name:"+item.CategoryName+"\");" +
+                                   "var countRow=$('#tableProductCategory tr').length;if(countRow==1)" +
+                                   "location.replace(location.pathname+\"?page="+pagenext+"\");" +
+                                   "});"
+                               })
+                                ||
+                                <a href="/Admin/ProductCategory/Edit/@item.CategoryID">Edit</a>
+                            </td>
+                            <td> @item.CategoryID </td>
+                            <td> @item.CategoryName </td>
+
+                            <td>
+                                @{
+                                    string CategoryParentName;
+                                    ProductCategoryDAO productCategoryDAO = new ProductCategoryDAO();
+                                    if (item.ParentCategoryID != null)
+                                    {
+                                        CategoryParentName = productCategoryDAO.GetProductCategory(item.ParentCategoryID).CategoryName;
+
+                                    }
+                                    else
+                                    {
+                                        CategoryParentName = "None ParentProductCategory";
+                                    }
+                                }
+                                @CategoryParentName
+                            </td>
+                            <th> @item.CreateDate </th>
+                            <th> @item.CreateBy </th>
+                            <th> @item.ModifiedDate </th>
+                            <th> @item.ModifiedBy </th>
+
+                            <td> <a href="#" class="btn-active" data-id="@item.CategoryID">@(item.Status ? "Kích Hoạt" : "Đã Khóa")</a> </td>
+                        </tr>
+
+
+                    }
+                </tbody>
+            </table>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+    </div>
+    if (TempData["msg"] != null)
+    {
+        @Html.Raw(TempData["msg"]);
+    }
+    <script type="text/javascript">
+        $(document).ready(function () {
+            location.pathname
+        })
+    </script>
+}

@@ -1,0 +1,26 @@
+D:\OnlineShopGithubBay\ShopOnline\Common\bin\Debug\Common.dll
+D:\OnlineShopGithubBay\ShopOnline\Common\bin\Debug\Common.pdb
+D:\OnlineShopGithubBay\ShopOnline\Common\obj\Debug\Common.dll
+D:\OnlineShopGithubBay\ShopOnline\Common\obj\Debug\Common.pdb
+D:\do an thuc tap\Common\bin\Debug\Common.dll
+D:\do an thuc tap\Common\bin\Debug\Common.pdb
+D:\do an thuc tap\Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\do an thuc tap\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\do an thuc tap\Common\obj\Debug\Common.dll
+D:\do an thuc tap\Common\obj\Debug\Common.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\Common\bin\Debug\Common.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\Common\bin\Debug\Common.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\OnlineShopGitHubHuy\shoponline_v4\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\OnlineShopGitHubHuy\shoponline_v4\Common\obj\Debug\Common.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\Common\obj\Debug\Common.pdb
+D:\OnlineShop\Common\bin\Debug\Common.dll
+D:\OnlineShop\Common\bin\Debug\Common.pdb
+D:\OnlineShop\Common\obj\Debug\Common.dll
+D:\OnlineShop\Common\obj\Debug\Common.pdb
+D:\OnlineShop_BanCuoi\Common\bin\Debug\Common.dll
+D:\OnlineShop_BanCuoi\Common\bin\Debug\Common.pdb
+D:\OnlineShop_BanCuoi\Common\obj\Debug\Common.dll
+D:\OnlineShop_BanCuoi\Common\obj\Debug\Common.pdb
+D:\OnlineShop_BanCuoi\Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\OnlineShop_BanCuoi\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache

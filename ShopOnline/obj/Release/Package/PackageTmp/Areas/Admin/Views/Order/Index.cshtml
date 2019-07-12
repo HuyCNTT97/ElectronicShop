@@ -1,0 +1,81 @@
+﻿@model PagedList.IPagedList<_Models.EF.Order>
+@using PagedList.Mvc;
+@using _Models.DAO;
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+
+<script src="~/Asset/js/Controller/OrderController.js"></script>
+
+}
+@{
+   
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Data Table Order
+        </div>
+        <div class="card-body table-responsive">
+            @using (Html.BeginForm("Index", "News", FormMethod.Get))
+            {
+                <a href="/Admin/News/Create" class="btn ">Create</a>
+                <div class="row">
+
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchOrder" value="@ViewBag.Search" placeholder="Tìm kiếm Hóa Đơn" class="form-control" />
+                        <button type="submit" id="btnSeachNews" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover bg-light table-striped " id="tableNews" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td>OrderID</td>
+                            <td>CreateDay</td>
+                            <td>CustomerID</td>
+                            <td>ShipName</td>
+                            <td>ShipPhone</td>
+                            <td>ShipAdress</td>
+                            <td>ShipEmail</td>
+                            <td>status</td>
+
+                        </tr>
+                    </thead>
+                    <tboy>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td>@item.OrderID<a href="/Admin/OrderDetail/Index/@item.OrderID">(Xem Chi Tiết)</a></td>
+                            <td>@item.CreateDay</td>
+                            <td>@item.CustomerID</td>
+                            <td>@item.ShipName</td>
+                            <td>@item.ShipPhone</td>
+                            <td>@item.ShipAdress</td>
+                            <td>@item.ShipEmail</td>
+                            <td><a href="#" class="btn-link-active" data-id="@item.OrderID">@(item.status?"Bán thành công và thanh toán đầy đủ":"Chưa thanh toán đầy đủ")</a></td>
+                        </tr>
+                        }
+                    </tboy>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, SearchOrder = ViewBag.Search }))
+            </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        @if (TempData["msg"] != null)
+        {
+            @Html.Raw(TempData["msg"]);
+        }
+    </div>
+
+}
+
+

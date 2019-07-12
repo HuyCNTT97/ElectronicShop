@@ -1,0 +1,892 @@
+D:\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
+D:\ShopOnline\ShopOnline\bin\ApplicationInsights.config
+D:\ShopOnline\ShopOnline\bin\ShopOnline.dll.config
+D:\ShopOnline\ShopOnline\bin\ShopOnline.dll
+D:\ShopOnline\ShopOnline\bin\ShopOnline.pdb
+D:\ShopOnline\ShopOnline\bin\roslyn\csc.exe
+D:\ShopOnline\ShopOnline\bin\roslyn\csc.exe.config
+D:\ShopOnline\ShopOnline\bin\roslyn\csc.rsp
+D:\ShopOnline\ShopOnline\bin\roslyn\csi.exe
+D:\ShopOnline\ShopOnline\bin\roslyn\csi.exe.config
+D:\ShopOnline\ShopOnline\bin\roslyn\csi.rsp
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ShopOnline\ShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ShopOnline\ShopOnline\bin\roslyn\System.AppContext.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Console.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.IO.Compression.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.IO.Pipes.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Security.Claims.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.ValueTuple.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XPath.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ShopOnline\ShopOnline\bin\roslyn\vbc.exe
+D:\ShopOnline\ShopOnline\bin\roslyn\vbc.exe.config
+D:\ShopOnline\ShopOnline\bin\roslyn\vbc.rsp
+D:\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe
+D:\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\ShopOnline\ShopOnline\bin\Antlr3.Runtime.dll
+D:\ShopOnline\ShopOnline\bin\CKFinder.dll
+D:\ShopOnline\ShopOnline\bin\EntityFramework.dll
+D:\ShopOnline\ShopOnline\bin\JavaScriptEngineSwitcher.Core.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.Web.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.ApplicationInsights.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ShopOnline\ShopOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\ShopOnline\ShopOnline\bin\Newtonsoft.Json.dll
+D:\ShopOnline\ShopOnline\bin\PagedList.dll
+D:\ShopOnline\ShopOnline\bin\PagedList.Mvc.dll
+D:\ShopOnline\ShopOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\ShopOnline\ShopOnline\bin\System.Web.Helpers.dll
+D:\ShopOnline\ShopOnline\bin\System.Web.Mvc.dll
+D:\ShopOnline\ShopOnline\bin\System.Web.Optimization.dll
+D:\ShopOnline\ShopOnline\bin\System.Web.Razor.dll
+D:\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.dll
+D:\ShopOnline\ShopOnline\bin\System.Web.WebPages.dll
+D:\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.dll
+D:\ShopOnline\ShopOnline\bin\WebGrease.dll
+D:\ShopOnline\ShopOnline\bin\_Models.dll
+D:\ShopOnline\ShopOnline\bin\_Models.pdb
+D:\ShopOnline\ShopOnline\bin\_Models.dll.config
+D:\ShopOnline\ShopOnline\bin\EntityFramework.xml
+D:\ShopOnline\ShopOnline\bin\JavaScriptEngineSwitcher.Core.xml
+D:\ShopOnline\ShopOnline\bin\PagedList.xml
+D:\ShopOnline\ShopOnline\bin\PagedList.Mvc.xml
+D:\ShopOnline\ShopOnline\bin\System.Web.Helpers.xml
+D:\ShopOnline\ShopOnline\bin\System.Web.Mvc.xml
+D:\ShopOnline\ShopOnline\bin\System.Web.Optimization.xml
+D:\ShopOnline\ShopOnline\bin\System.Web.Razor.xml
+D:\ShopOnline\ShopOnline\bin\System.Web.WebPages.xml
+D:\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.xml
+D:\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.xml
+D:\ShopOnline\ShopOnline\bin\Newtonsoft.Json.xml
+D:\ShopOnline\ShopOnline\bin\Antlr3.Runtime.pdb
+D:\ShopOnline\ShopOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\ShopOnline\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\ShopOnline\ShopOnline\bin\Microsoft.AI.Web.xml
+D:\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ShopOnline\ShopOnline\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
+D:\ShopOnline\ShopOnline\obj\Debug\ShopOnline.dll
+D:\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.dll
+D:\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\ApplicationInsights.config
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\ShopOnline.dll.config
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\ShopOnline.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\ShopOnline.pdb
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\csc.exe
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\csc.exe.config
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\csc.rsp
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\csi.exe
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\csi.exe.config
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\csi.rsp
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.AppContext.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Console.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.IO.Compression.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.IO.Pipes.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Security.Claims.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.ValueTuple.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XPath.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\vbc.exe
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\vbc.exe.config
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\vbc.rsp
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Antlr3.Runtime.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\EntityFramework.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\JavaScriptEngineSwitcher.Core.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.Web.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.ApplicationInsights.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Newtonsoft.Json.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\PagedList.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\PagedList.Mvc.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.Helpers.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.Mvc.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.Optimization.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.Razor.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.WebPages.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\WebGrease.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\_Models.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\_Models.pdb
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\_Models.dll.config
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\EntityFramework.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\JavaScriptEngineSwitcher.Core.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\PagedList.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\PagedList.Mvc.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.Helpers.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.Mvc.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.Optimization.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.Razor.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.WebPages.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Newtonsoft.Json.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Antlr3.Runtime.pdb
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.AI.Web.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\obj\Debug\ShopOnline.dll
+D:\HOC KY 1 2018-2019\Thuctapchuyenmon\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\ApplicationInsights.config
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\ShopOnline.dll.config
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\ShopOnline.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\ShopOnline.pdb
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Antlr3.Runtime.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\EntityFramework.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\JavaScriptEngineSwitcher.Core.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.Web.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.ApplicationInsights.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Newtonsoft.Json.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\PagedList.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\PagedList.Mvc.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.Helpers.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.Mvc.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.Optimization.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.Razor.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.WebPages.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\WebGrease.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\_Models.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\_Models.pdb
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\_Models.dll.config
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\EntityFramework.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\JavaScriptEngineSwitcher.Core.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\PagedList.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\PagedList.Mvc.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.Helpers.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.Mvc.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.Optimization.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.Razor.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.WebPages.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Newtonsoft.Json.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Antlr3.Runtime.pdb
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.AI.Web.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\obj\Debug\ShopOnline.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\csc.exe
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\csc.exe.config
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\csc.rsp
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\csi.exe
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\csi.exe.config
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\csi.rsp
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.AppContext.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Console.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.IO.Compression.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.IO.Pipes.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Security.Claims.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.ValueTuple.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XPath.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\vbc.exe
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\vbc.exe.config
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\vbc.rsp
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Common.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Common.pdb
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\BotDetect.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\BotDetect.Web.Mvc.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Data.SQLite.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Data.SQLite.xml
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\System.Data.SQLite.dll.config
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Facebook.dll
+D:\OnlineShopGithubBay\ShopOnline\ShopOnline\bin\Facebook.xml
+D:\do an thuc tap\ShopOnline\bin\ApplicationInsights.config
+D:\do an thuc tap\ShopOnline\bin\ShopOnline.dll.config
+D:\do an thuc tap\ShopOnline\bin\ShopOnline.dll
+D:\do an thuc tap\ShopOnline\bin\ShopOnline.pdb
+D:\do an thuc tap\ShopOnline\bin\roslyn\csc.exe
+D:\do an thuc tap\ShopOnline\bin\roslyn\csc.exe.config
+D:\do an thuc tap\ShopOnline\bin\roslyn\csc.rsp
+D:\do an thuc tap\ShopOnline\bin\roslyn\csi.exe
+D:\do an thuc tap\ShopOnline\bin\roslyn\csi.exe.config
+D:\do an thuc tap\ShopOnline\bin\roslyn\csi.rsp
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\do an thuc tap\ShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.AppContext.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Console.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.IO.Compression.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.IO.Pipes.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Security.Claims.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.ValueTuple.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Xml.XPath.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\do an thuc tap\ShopOnline\bin\roslyn\vbc.exe
+D:\do an thuc tap\ShopOnline\bin\roslyn\vbc.exe.config
+D:\do an thuc tap\ShopOnline\bin\roslyn\vbc.rsp
+D:\do an thuc tap\ShopOnline\bin\roslyn\VBCSCompiler.exe
+D:\do an thuc tap\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\do an thuc tap\ShopOnline\bin\Antlr3.Runtime.dll
+D:\do an thuc tap\ShopOnline\bin\BotDetect.dll
+D:\do an thuc tap\ShopOnline\bin\BotDetect.Web.Mvc.dll
+D:\do an thuc tap\ShopOnline\bin\Common.dll
+D:\do an thuc tap\ShopOnline\bin\EntityFramework.dll
+D:\do an thuc tap\ShopOnline\bin\EntityFramework.SqlServer.dll
+D:\do an thuc tap\ShopOnline\bin\Facebook.dll
+D:\do an thuc tap\ShopOnline\bin\JavaScriptEngineSwitcher.Core.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.Web.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.ApplicationInsights.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\do an thuc tap\ShopOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\do an thuc tap\ShopOnline\bin\Newtonsoft.Json.dll
+D:\do an thuc tap\ShopOnline\bin\PagedList.dll
+D:\do an thuc tap\ShopOnline\bin\PagedList.Mvc.dll
+D:\do an thuc tap\ShopOnline\bin\System.Data.SQLite.dll
+D:\do an thuc tap\ShopOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\do an thuc tap\ShopOnline\bin\System.Web.Helpers.dll
+D:\do an thuc tap\ShopOnline\bin\System.Web.Mvc.dll
+D:\do an thuc tap\ShopOnline\bin\System.Web.Optimization.dll
+D:\do an thuc tap\ShopOnline\bin\System.Web.Razor.dll
+D:\do an thuc tap\ShopOnline\bin\System.Web.WebPages.Deployment.dll
+D:\do an thuc tap\ShopOnline\bin\System.Web.WebPages.dll
+D:\do an thuc tap\ShopOnline\bin\System.Web.WebPages.Razor.dll
+D:\do an thuc tap\ShopOnline\bin\WebGrease.dll
+D:\do an thuc tap\ShopOnline\bin\_Models.dll
+D:\do an thuc tap\ShopOnline\bin\Common.pdb
+D:\do an thuc tap\ShopOnline\bin\_Models.pdb
+D:\do an thuc tap\ShopOnline\bin\_Models.dll.config
+D:\do an thuc tap\ShopOnline\bin\EntityFramework.xml
+D:\do an thuc tap\ShopOnline\bin\EntityFramework.SqlServer.xml
+D:\do an thuc tap\ShopOnline\bin\Facebook.xml
+D:\do an thuc tap\ShopOnline\bin\JavaScriptEngineSwitcher.Core.xml
+D:\do an thuc tap\ShopOnline\bin\PagedList.xml
+D:\do an thuc tap\ShopOnline\bin\PagedList.Mvc.xml
+D:\do an thuc tap\ShopOnline\bin\System.Data.SQLite.xml
+D:\do an thuc tap\ShopOnline\bin\System.Data.SQLite.dll.config
+D:\do an thuc tap\ShopOnline\bin\System.Web.Helpers.xml
+D:\do an thuc tap\ShopOnline\bin\System.Web.Mvc.xml
+D:\do an thuc tap\ShopOnline\bin\System.Web.Optimization.xml
+D:\do an thuc tap\ShopOnline\bin\System.Web.Razor.xml
+D:\do an thuc tap\ShopOnline\bin\System.Web.WebPages.xml
+D:\do an thuc tap\ShopOnline\bin\System.Web.WebPages.Deployment.xml
+D:\do an thuc tap\ShopOnline\bin\System.Web.WebPages.Razor.xml
+D:\do an thuc tap\ShopOnline\bin\Newtonsoft.Json.xml
+D:\do an thuc tap\ShopOnline\bin\Antlr3.Runtime.pdb
+D:\do an thuc tap\ShopOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\do an thuc tap\ShopOnline\bin\Microsoft.AI.Web.xml
+D:\do an thuc tap\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\do an thuc tap\ShopOnline\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\do an thuc tap\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\do an thuc tap\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
+D:\do an thuc tap\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
+D:\do an thuc tap\ShopOnline\obj\Debug\ShopOnline.dll
+D:\do an thuc tap\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\do an thuc tap\ver 3\ShopOnline\bin\ApplicationInsights.config
+D:\do an thuc tap\ver 3\ShopOnline\bin\ShopOnline.dll.config
+D:\do an thuc tap\ver 3\ShopOnline\bin\ShopOnline.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\ShopOnline.pdb
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\csc.exe
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\csc.exe.config
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\csc.rsp
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\csi.exe
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\csi.exe.config
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\csi.rsp
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.AppContext.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Console.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.IO.Compression.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.IO.Pipes.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Security.Claims.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.ValueTuple.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Xml.XPath.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\vbc.exe
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\vbc.exe.config
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\vbc.rsp
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\VBCSCompiler.exe
+D:\do an thuc tap\ver 3\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\do an thuc tap\ver 3\ShopOnline\bin\Antlr3.Runtime.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\BotDetect.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\BotDetect.Web.Mvc.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Common.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\EntityFramework.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\EntityFramework.SqlServer.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Facebook.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\JavaScriptEngineSwitcher.Core.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.Web.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.ApplicationInsights.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Newtonsoft.Json.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\PagedList.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\PagedList.Mvc.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Data.SQLite.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.Helpers.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.Mvc.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.Optimization.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.Razor.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.WebPages.Deployment.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.WebPages.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.WebPages.Razor.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\WebGrease.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\_Models.dll
+D:\do an thuc tap\ver 3\ShopOnline\bin\Common.pdb
+D:\do an thuc tap\ver 3\ShopOnline\bin\_Models.pdb
+D:\do an thuc tap\ver 3\ShopOnline\bin\_Models.dll.config
+D:\do an thuc tap\ver 3\ShopOnline\bin\EntityFramework.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\EntityFramework.SqlServer.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\Facebook.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\JavaScriptEngineSwitcher.Core.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\PagedList.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\PagedList.Mvc.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Data.SQLite.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Data.SQLite.dll.config
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.Helpers.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.Mvc.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.Optimization.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.Razor.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.WebPages.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.WebPages.Deployment.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Web.WebPages.Razor.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\Newtonsoft.Json.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\Antlr3.Runtime.pdb
+D:\do an thuc tap\ver 3\ShopOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.AI.Web.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\do an thuc tap\ver 3\ShopOnline\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\do an thuc tap\ver 3\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\do an thuc tap\ver 3\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
+D:\do an thuc tap\ver 3\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
+D:\do an thuc tap\ver 3\ShopOnline\obj\Debug\ShopOnline.dll
+D:\do an thuc tap\ver 3\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\ApplicationInsights.config
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\ShopOnline.dll.config
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\ShopOnline.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\ShopOnline.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\csc.exe
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\csc.exe.config
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\csc.rsp
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\csi.exe
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\csi.exe.config
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\csi.rsp
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.AppContext.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Console.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.IO.Compression.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.IO.Pipes.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Security.Claims.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.ValueTuple.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Xml.XPath.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\vbc.exe
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\vbc.exe.config
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\vbc.rsp
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\VBCSCompiler.exe
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Antlr3.Runtime.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\BotDetect.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\BotDetect.Web.Mvc.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Common.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\EntityFramework.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\EntityFramework.SqlServer.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Facebook.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\JavaScriptEngineSwitcher.Core.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.Web.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.ApplicationInsights.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Newtonsoft.Json.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\PagedList.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\PagedList.Mvc.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Data.SQLite.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.Helpers.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.Mvc.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.Optimization.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.Razor.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.WebPages.Deployment.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.WebPages.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.WebPages.Razor.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\WebGrease.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\_Models.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Common.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\_Models.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\_Models.dll.config
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\EntityFramework.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\EntityFramework.SqlServer.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Facebook.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\JavaScriptEngineSwitcher.Core.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\PagedList.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\PagedList.Mvc.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Data.SQLite.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Data.SQLite.dll.config
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.Helpers.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.Mvc.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.Optimization.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.Razor.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.WebPages.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.WebPages.Deployment.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Web.WebPages.Razor.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Newtonsoft.Json.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Antlr3.Runtime.pdb
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.AI.Web.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\obj\Debug\ShopOnline.dll
+D:\OnlineShopGitHubHuy\shoponline_v4\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\ApplicationInsights.config
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\ShopOnline.dll.config
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\ShopOnline.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\ShopOnline.pdb
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\csc.exe
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\csc.exe.config
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\csc.rsp
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\csi.exe
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\csi.exe.config
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\csi.rsp
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.AppContext.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Console.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.IO.Compression.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.IO.Pipes.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Security.Claims.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.ValueTuple.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XPath.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\vbc.exe
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\vbc.exe.config
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\vbc.rsp
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Antlr3.Runtime.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\BotDetect.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\BotDetect.Web.Mvc.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Common.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\EntityFramework.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Facebook.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\JavaScriptEngineSwitcher.Core.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.Web.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.ApplicationInsights.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Newtonsoft.Json.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\PagedList.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\PagedList.Mvc.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Data.SQLite.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.Helpers.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.Mvc.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.Optimization.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.Razor.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.WebPages.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\WebGrease.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\_Models.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Common.pdb
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\_Models.pdb
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\EntityFramework.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Facebook.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\JavaScriptEngineSwitcher.Core.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\PagedList.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\PagedList.Mvc.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Data.SQLite.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.Helpers.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.Mvc.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.Optimization.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.Razor.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.WebPages.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Newtonsoft.Json.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Antlr3.Runtime.pdb
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.AI.Web.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\obj\Debug\ShopOnline.dll
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\OnlineShopGitHubHuy\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojResolveAssemblyReference.cache
+D:\OnlineShop_BanCuoi\ShopOnline\bin\ApplicationInsights.config
+D:\OnlineShop_BanCuoi\ShopOnline\bin\ShopOnline.dll.config
+D:\OnlineShop_BanCuoi\ShopOnline\bin\ShopOnline.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\ShopOnline.pdb
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\csc.exe
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\csc.exe.config
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\csc.rsp
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\csi.exe
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\csi.exe.config
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\csi.rsp
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.AppContext.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Console.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.IO.Compression.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.IO.Pipes.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Security.Claims.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.ValueTuple.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Xml.XPath.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\vbc.exe
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\vbc.exe.config
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\vbc.rsp
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\VBCSCompiler.exe
+D:\OnlineShop_BanCuoi\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Antlr3.Runtime.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\BotDetect.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\BotDetect.Web.Mvc.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\CKFinder.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Common.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\EntityFramework.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\EntityFramework.SqlServer.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Facebook.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\JavaScriptEngineSwitcher.Core.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.Web.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.ApplicationInsights.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Newtonsoft.Json.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\PagedList.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\PagedList.Mvc.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Data.SQLite.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.Helpers.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.Mvc.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.Optimization.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.Razor.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.WebPages.Deployment.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.WebPages.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.WebPages.Razor.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\WebGrease.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\_Models.dll
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Common.pdb
+D:\OnlineShop_BanCuoi\ShopOnline\bin\_Models.pdb
+D:\OnlineShop_BanCuoi\ShopOnline\bin\EntityFramework.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\EntityFramework.SqlServer.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Facebook.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\JavaScriptEngineSwitcher.Core.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\PagedList.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\PagedList.Mvc.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Data.SQLite.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.Helpers.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.Mvc.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.Optimization.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.Razor.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.WebPages.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.WebPages.Deployment.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Web.WebPages.Razor.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Newtonsoft.Json.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Antlr3.Runtime.pdb
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.AI.Web.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\OnlineShop_BanCuoi\ShopOnline\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\OnlineShop_BanCuoi\ShopOnline\obj\Debug\ShopOnline.dll
+D:\OnlineShop_BanCuoi\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\OnlineShop_BanCuoi\ShopOnline\bin\_Models.dll.config
+D:\OnlineShop_BanCuoi\ShopOnline\bin\System.Data.SQLite.dll.config
+D:\OnlineShop_BanCuoi\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\OnlineShop_BanCuoi\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
+D:\OnlineShop_BanCuoi\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete

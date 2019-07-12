@@ -1,0 +1,99 @@
+﻿@model PagedList.IPagedList<_Models.EF.News>
+@using PagedList.Mvc;
+@using _Models.DAO;
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+
+    <script src="~/Asset/js/Controller/NewsController.js"></script>
+}
+@{
+    var trangcandoi = 1;
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+           Data Table News
+        </div>
+        <div class="card-body table-responsive">
+            @using (Html.BeginForm("Index", "News", FormMethod.Get))
+            {
+                <a href="/Admin/News/Create" class="btn ">Create</a>
+                <div class="row">
+
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchNews" value="@ViewBag.Search" placeholder="Tìm kiếm News" class="form-control" />
+
+                        <button type="submit" id="btnSeachNews" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover bg-light table-striped " id="tableNews" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Chức năng</th>
+                            <th>Loại Tin Tức</th>
+                            <th>Nằm Trong Loại</th>
+                            <th>Ngày Tạo</th>
+                            <th>Tạo Bởi</th>
+                            <th>Trạng Thái</th>
+
+                        </tr>
+                    </thead>
+                    <tboy>
+                        @foreach (var item in Model)
+                        {
+                            var name = item.NewsName;
+
+                            if (int.Parse(TempData["page"].ToString()) != 1)
+                            {
+                                trangcandoi = int.Parse(TempData["page"].ToString()) - 1;
+                            }
+                            <tr id="row_@item.NewsID">
+                                <td>
+
+                                    @Ajax.ActionLink("Remove", "Remove", new { IDNewsCanXoa = item.NewsID }, new AjaxOptions()
+                               {
+                                   Confirm="Bạn có chắc chắn muốn xóa không",
+                                   OnComplete="$('#row_"+item.NewsID + "').remove();",
+                                   HttpMethod="Delete",
+                                   OnSuccess= " $(document).ready(function () {alert(\"Bạn đã xóa News có tên "+ name + "\");var row=$('#tableNews tr').length;if(row==1)location.replace(location.pathname+\"?page="+trangcandoi+" \")})"
+                               })
+                                    ||
+                                    @Html.ActionLink("Edit", "Edit", "News", new { NewsEditID = item.NewsID }, FormMethod.Get)
+                                </td>
+                                <td>@item.NewsName</td>
+                                @{
+                                    NewsDAO newsDAO = new NewsDAO();
+
+                                    string ParentNewsName = newsDAO.TenNews(item.ParentNewsID);
+                                }
+                                <td>@ParentNewsName</td>
+                                <td>@item.CreateDate</td>
+                                <td>@item.CreateBy</td>
+                                <td><a href="#" class="btn-active" data-id="@item.NewsID">@(item.Status ? "Kích Hoạt" : "Đã Khóa")</a></td>
+                            </tr>
+                        }
+                    </tboy>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, SearchContent = ViewBag.Search }))
+            </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        @if (TempData["msg"] != null)
+        {
+            @Html.Raw(TempData["msg"]);
+        }
+    </div>
+
+}
+
+

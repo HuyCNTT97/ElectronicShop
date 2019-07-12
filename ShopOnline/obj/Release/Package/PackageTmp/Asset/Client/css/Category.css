@@ -1,0 +1,18 @@
+﻿.mautext {
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+    background: linear-gradient(to right, #f8be3c, #fac44d, #facb65,#fcdc70,#fae292,#f6f5c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+    .mautext:hover {
+        background: #d5fa17;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+.categories {
+    background: #383838;
+}

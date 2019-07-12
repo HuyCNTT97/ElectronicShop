@@ -1,0 +1,94 @@
+﻿@using _Models.EF;
+@model PagedList.IPagedList<_Models.EF.Content>
+@using PagedList.Mvc;
+@{
+    /**/
+    ViewBag.Title = "Quản trị người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+@section jsFooter{
+
+    <script src="~/Asset/js/Controller/ContentController.js"></script>
+}
+@{
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+           Data Table Content
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Index", "Content", FormMethod.Get))
+            {
+                <div class="col-md-4">
+                    <a href="/Admin/Content/Create" class="btn">Create</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-8 input-group">
+
+                        <input type="text" name="SearchContent" value="@ViewBag.Search" placeholder="Tìm kiếm user" class="form-control" />
+
+                        <button type="submit" id="btnSeachUser" class="btn ">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            }
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover bg-light table-striped" id="tableUser" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Chức năng</th>
+                            <th>Tên Nội Dung</th>
+                            <th>Mô Tả</th>
+                            <th>Hình Ảnh</th>
+                            <th>Chi Tiết</th>
+                            <th>Loại News</th>
+                            <th>Ngày Tạo</th>
+                            <th>Số lượt xem</th>
+                            <th>Trạng Thái</th>
+                        </tr>
+                    </thead>
+                    <tboy>
+                        @foreach (var item in Model)
+                        {
+                            <tr id="row_@item.ContentID">
+                                <td>
+
+                                    @Ajax.ActionLink("Xóa", "Remove", new { Id = item.ContentID }, new AjaxOptions()
+                               {
+                                   Confirm = "bạn có muốn xóa bản ghi này?",
+                                   OnComplete = "$('#row_" + @item.ContentID + "').remove();",
+                                   HttpMethod = "Delete",
+
+                                   OnSuccess = " $(document).ready(function () { var a = $('#tableUser tr').length; alert(a);if(a==1)location.reload(); })"
+                               })
+
+                                    @Html.ActionLink("Sửa", "Edit", "Content", new { idContentEdit = item.ContentID }, FormMethod.Get)
+                                </td>
+                                <td>@item.ContentName</td>
+                                <td>@item.Description</td>
+                                <td><img src="@item.Image" height="100px" alt="No image" width="100px" class="img-responsive" /></td>
+                                <td>@Html.Raw(item.Detail)</td>
+                                <td>@item.News.NewsName</td>
+
+                                <td>@item.CreateDate</td>
+                                <td>@item.Viewcount</td>
+                                <td><a href="#" class="btn-link-active " data-id="@item.ContentID">@(item.Status ? "Kích Hoạt" : "Khóa")</a></td>
+                            </tr>
+                        }
+                    </tboy>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, SearchContent = ViewBag.Search }))
+            </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        @if (TempData["msg"] != null)
+        {
+            @Html.Raw(TempData["msg"]);
+        }
+    </div>
+
+}

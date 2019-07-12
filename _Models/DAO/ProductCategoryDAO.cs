@@ -17,8 +17,9 @@ namespace _Models.DAO
         }
         public ProductCategory GetProductCategory(int? id)
         {
-            var product=dt.Products.SingleOrDefault(x=>x.ProductID==id);
-            return dt.ProductCategories.Where(x => x.CategoryID == product.CategoryID).SingleOrDefault();
+            
+            if (id == null) return dt.ProductCategories.SingleOrDefault();
+            else return dt.ProductCategories.Single(x => x.CategoryID == id);
         }
         public IEnumerable<ProductCategory> SelectAll()
         {

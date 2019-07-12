@@ -52,6 +52,11 @@ namespace ShopOnline.Controllers
             {
                 list = (List<CartItem>)cart;
             }
+            else
+            {
+                TempData["msg"] = MessageBox.Show("chưa có giỏ hàng nào được thêm");
+                return Redirect("/");
+            }
             return View(list);  
         }
         [HttpPost]
@@ -64,6 +69,17 @@ namespace ShopOnline.Controllers
             order.ShipPhone = int.Parse(txtPhone);
             order.ShipEmail = txtEmail;
             var session = Session[Common.CommonConstants.Customer_SESSION] as CustomerLogin;
+            if (session == null)
+            {
+                TempData["msg"] = MessageBox.Show("Bạn phải đăng nhập trước khi mua hàng");
+                var cart = Session[CartSession];
+                var list = new List<CartItem>();
+                if (cart != null)
+                {
+                    list = (List<CartItem>)cart;
+                }
+                return View(list);
+            }
             order.CustomerID = new CustomerAccountDAO().getCustomerAccount(session.Email).ID;
             var orderDAO = new OrderDAO();
             var id = orderDAO.AddOrder(order);

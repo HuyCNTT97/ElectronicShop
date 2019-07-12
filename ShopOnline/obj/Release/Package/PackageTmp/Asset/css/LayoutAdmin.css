@@ -1,0 +1,116 @@
+﻿
+#wrapper {
+    margin-top: 40px;
+}
+
+#content-wrapper {
+    border: 1px solid black;
+    min-height: 610px;
+}
+
+.form-content {
+    min-height: 485px;
+}
+
+#footer {
+    width: 100%;
+    padding-top: 20px;
+    background: rgba(207, 203, 203, 0.30);
+    border-top: 1px solid white;
+}
+
+body {
+    font-family: "Libre Baskerville", serif;
+}
+
+#wrapper {
+    background: rgba(207, 203, 203, 0.30);
+}
+
+.btn {
+    background: #392f2f;
+    padding: 5px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease-in;
+}
+
+    .btn:hover {
+        box-shadow: 0px 15px 20px #F0D377;
+        color: #fff;
+        transform: translateY(-7px);
+    }
+
+//dinh dang thanh cuon
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #1B273D;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f8be3c;
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #2b374e;
+}
+
+
+.mautext {
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+    background: linear-gradient(to right, #f8be3c, #fac44d, #facb65,#fcdc70,#fae292,#f6f5c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.mautext:hover {
+    background: #d5fa17;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Logo*/
+#imgLogo {
+    margin: auto;
+}
+
+.nav-item {
+    font-size: 25px;
+}
+
+/**/
+.sidebar {
+    margin-top: 13px;
+}
+/*DesignButtonListPage*/
+
+.pagination-container a{
+    border:1px solid rgba(207, 203, 203, 0.30);
+    margin:0px 3px 0px;
+    text-align:center;
+    display:block;
+    width:20px;
+    background-color:rgba(0,0,0,0.3);
+    color:white;
+    font-weight:bold;
+}
+/*mau text Menu*/
+.sidebar .dropdown-item {
+    font-weight: bold;
+    color: #f8e3e3
+}
+.sidebar .dropdown-item:hover {
+    font-weight: bold;
+    color: black
+}
+.sidebar .dropdown-menu {
+    background-color: rgba(0,0,0,0.3);
+}

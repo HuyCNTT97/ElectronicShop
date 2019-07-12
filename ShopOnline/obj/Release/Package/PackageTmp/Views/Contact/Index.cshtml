@@ -1,0 +1,99 @@
+﻿@model _Models.EF.Contact
+@{
+    ViewBag.Title = "trang liên hệ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section csschirld{
+    <link href="~/Asset/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Asset/Client/css/modal.css" rel="stylesheet" />
+}
+@section jsFooter{
+    <script src="~/Asset/Client/js/contactController.js"></script>
+}
+<style>
+    #mapCanvas {
+        width: 100%;
+        height: 600px;
+    }
+</style>
+<div class="content">
+    <div class="row">
+        <div class="col-md-5">
+            <h2>Thông tin liên hệ</h2>
+            @Html.Raw(Model.Content)
+            <hr />
+            <h2>Gửi thông tin </h2>
+            <br />
+            <form>
+                <div class="form-group">
+                    <label>Họ tên</label>
+                    <input id="txtName" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Điện Thoại</label>
+                    <input id="txtPhone" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Địa Chỉ</label>
+                    <input id="txtAddress" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email"
+                           required id="txtEmail"
+                           class="form-control"
+                           placeholder="YourNameEmail@TypeEmail.com" />
+                </div>
+                <div class="form-group">
+                    <label>Yêu cầu</label>
+                    <textarea id="txtContent" class="form-control">
+                </textarea>
+                </div>
+                <button id="btnSend" class="btn-success">Gửi đi</button>
+            </form>
+        </div>
+        <div style="border-left:1px solid #fff;" class="col-md-6">
+            <h2>Bản đồ</h2>
+            <div class="map" id="mapCanvas"></div>
+        </div>
+    </div>
+</div>
+@if (string.IsNullOrEmpty(TempData["msg"].ToString()))
+{
+    @Html.Raw(TempData["msg"]);
+}
+<script>
+
+    // This example displays a marker at the center of Australia.10.805084, 106.716956
+    // When the user clicks the marker, an info window opens.
+
+    function initMap() {
+        var uluru = { lat: 10.805084, lng: 106.716956 };
+        var map = new google.maps.Map(document.getElementById('mapCanvas'), {
+            zoom: 18,
+            center: uluru
+        });
+
+        var contentString = 'abc'
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            //position: uluru,
+            map: map,
+            title: 'Uluru (Ayers Rock)'
+        });
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkBnDVQZipfQzlquq0Bmx3r2_yXaiTm6A&callback=initMap">
+</script>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>

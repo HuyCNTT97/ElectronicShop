@@ -1,0 +1,12 @@
+D:\OnlineShop_BanCuoi\_Models\bin\Release\_Models.dll.config
+D:\OnlineShop_BanCuoi\_Models\bin\Release\_Models.dll
+D:\OnlineShop_BanCuoi\_Models\bin\Release\_Models.pdb
+D:\OnlineShop_BanCuoi\_Models\bin\Release\EntityFramework.dll
+D:\OnlineShop_BanCuoi\_Models\bin\Release\EntityFramework.SqlServer.dll
+D:\OnlineShop_BanCuoi\_Models\bin\Release\EntityFramework.xml
+D:\OnlineShop_BanCuoi\_Models\bin\Release\EntityFramework.SqlServer.xml
+D:\OnlineShop_BanCuoi\_Models\obj\Release\_Models.csprojAssemblyReference.cache
+D:\OnlineShop_BanCuoi\_Models\obj\Release\_Models.csproj.CoreCompileInputs.cache
+D:\OnlineShop_BanCuoi\_Models\obj\Release\_Models.csproj.CopyComplete
+D:\OnlineShop_BanCuoi\_Models\obj\Release\_Models.dll
+D:\OnlineShop_BanCuoi\_Models\obj\Release\_Models.pdb

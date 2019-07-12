@@ -18,23 +18,13 @@ namespace _Models.EF
         [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ProductID { get; set; }
-
         public int Quantity { get; set; }
-
         public double PriceWhenBuyAtTime { get; set; }
-
         public bool Trangthaigiao { get; set; }
-
         public bool Trangthaithanhtoan { get; set; }
-
         public bool Trangthaixuli { get; set; }
-
         public DateTime? NgayGiao { get; set; }
-
-        public bool? Trangthaidanggiao { get; set; }
-
         public virtual Order Order { get; set; }
-
         public virtual Product Product { get; set; }
     }
 }
